@@ -1,0 +1,20 @@
+/* ==========================================================================
+   WRAPPER / ELEMENT
+   ========================================================================== */
+
+.wrapper {
+    max-width: 1256px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: $breakpoint-ml) {
+    .wrapper {
+        padding: 0 32px;
+    }
+}
+
+@media screen and (max-width: $breakpoint-sm) {
+    .wrapper {
+        padding: 0 24px;
+    }
+}

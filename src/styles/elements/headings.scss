@@ -1,0 +1,103 @@
+/* ==========================================================================
+   HEADINGS / ELEMENT
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin: 0;
+}
+
+h3,
+h4,
+h5 {
+    font-family: var(--font-primary);
+}
+
+h1 {
+    font-size: var(--font-size-h1-pc);
+    font-family: var(--font-secondary);
+    color: var(--color-light-primary);
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: var(--font-size-h2-pc);
+    font-family: var(--font-third);
+}
+
+h3 {
+    font-size: var(--font-size-h3-pc);
+}
+
+h4 {
+    font-size: var(--font-size-h4-pc);
+    font-weight: 500;
+}
+
+h5 {
+    font-size: var(--font-size-h5-pc);
+    font-weight: 800;
+}
+
+.section__heading {
+    text-align: center;
+
+    h4 {
+        white-space: nowrap;
+    }
+}
+
+/*
+   Tablette
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    h1 {
+        font-size: var(--font-size-h1-tablet);
+    }
+
+    h2 {
+        font-size: var(--font-size-h2-tablet);
+    }
+
+    h3 {
+        font-size: var(--font-size-h3-tablet);
+    }
+
+    h4 {
+        font-size: var(--font-size-h4-tablet);
+    }
+
+    h5 {
+        font-size: var(--font-size-h5-tablet);
+    }
+}
+
+/*
+   Mobile
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    h1 {
+        font-size: var(--font-size-h1-mobile);
+    }
+
+    h2 {
+        font-size: var(--font-size-h2-mobile);
+    }
+
+    h3 {
+        font-size: var(--font-size-h3-mobile);
+    }
+
+    h4 {
+        font-size: var(--font-size-h4-mobile);
+    }
+
+    h5 {
+        font-size: var(--font-size-h5-mobile);
+    }
+}
