@@ -3,7 +3,6 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Form from './components/Form';
 import YouTube from './components/YouTube';
-import Accordion from './components/Accordion';
 
 export default class ComponentFactory {
   constructor() {
@@ -13,7 +12,6 @@ export default class ComponentFactory {
       Header,
       Form,
       YouTube,
-      Accordion,
     };
 
     this.init();

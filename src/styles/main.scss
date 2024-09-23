@@ -1,6 +1,10 @@
 //FONTS
 // ici sont chargé les fonts
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;700&family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Paytone+One&display=swap');
+@font-face {
+    font-family: 'Vonique 64';
+    src: url(../assets/fonts/Vonique64.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 // TOOLS
 // mixins et fonctions utilisés globalement dans le SCSS (Sass)
@@ -29,24 +33,8 @@
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper-bundle';
-@import 'components/form';
-@import 'components/header';
-@import 'components/hero';
-@import 'components/swiper';
-@import 'components/actualite';
-@import 'components/loisirs';
-@import 'components/histoire';
-@import 'components/liens-rapides';
-@import 'components/infolettre';
-@import 'components/footer';
-@import 'components/faq';
-@import 'components/info';
-@import 'components/map-requete';
-@import 'components/map';
-@import 'components/requete';
-@import 'components/videos';
-@import 'components/scrolly';
 @import 'components/icons';
+@import 'components/header';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
