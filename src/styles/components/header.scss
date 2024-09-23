@@ -4,7 +4,7 @@
 
 .header {
     padding: 0 2rem;
-    height: var(--header-height);
+    height: 150px;
     width: 100%;
     z-index: 10;
     position: sticky;
@@ -70,16 +70,6 @@
     transition: all 0.4s $ease-out-expo;
     transform: translateY(-100%);
 
-    @media screen and (min-width: $breakpoint-md) {
-        transform: none;
-        position: relative;
-        height: auto;
-        width: auto;
-        padding: 0;
-        display: block;
-        z-index: 2;
-    }
-
     .nav-is-active & {
         transform: translateY(0);
     }
@@ -99,12 +89,6 @@
         .nav-is-active & {
             transform: translateX(0);
             opacity: 1;
-        }
-
-        @media screen and (min-width: $breakpoint-md) {
-            flex-direction: row;
-            opacity: 1;
-            transform: none;
         }
     }
 }
@@ -128,10 +112,6 @@
         background-color: var(--color-white);
         transform: scaleX(0);
         transition: 0.3s all;
-    }
-
-    &:hover {
-        color: var(--color-black) !important;
     }
 
     @media screen and (min-width: $breakpoint-md) {
@@ -184,13 +164,64 @@
     }
 
     .asterisk {
+        --bar-height: 2px;
+        --bar-width: 16px;
+
         position: absolute;
         top: 50%;
         left: 50%;
         translate: -50% -50%;
+        padding: 0;
+        width: var(--bar-width);
+        height: 50px;
+        z-index: 10;
+
+        span {
+            background-color: var(--color-black);
+            height: var(--bar-height);
+            width: 100%;
+            position: absolute;
+            top: calc(50% - var(--bar-height) / 2);
+            left: calc(50% - var(--bar-width) / 2);
+            transition: all 0.4s ease-in-out;
+
+            &:nth-child(1) {
+                rotate: 90deg;
+            }
+
+            &:nth-child(2) {
+                rotate: 45deg;
+            }
+
+            &:nth-child(4) {
+                rotate: -45deg;
+            }
+        }
     }
 
     .nav-is-active & {
+        .icon-menu {
+            transform: scale(0, 0);
+            animation: none;
+        }
+
+        span {
+            &:nth-child(1) {
+                transform: scale(0, 0);
+            }
+
+            &:nth-child(2) {
+                transform: scale(4, 4);
+            }
+
+            &:nth-child(3) {
+                transform: scale(0, 0);
+            }
+
+            &:nth-child(4) {
+                transform: scale(4, 4);
+            }
+        }
     }
 }
 
