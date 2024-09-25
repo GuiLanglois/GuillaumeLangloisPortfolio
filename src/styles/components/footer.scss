@@ -1,0 +1,38 @@
+/* ==========================================================================
+   footer / components
+   ========================================================================== */
+
+.footer {
+    padding-bottom: 50px;
+
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-socials {
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+        }
+    }
+
+    .copyright {
+        opacity: 0.5;
+        font-size: 2.4rem;
+
+        p {
+            margin: 0;
+        }
+    }
+}
+
+.footer-home {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
