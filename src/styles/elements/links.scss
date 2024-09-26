@@ -41,7 +41,7 @@ a {
         color: var(--color-white);
 
         &::before {
-            transform: scale(1);
+            transform: scale(1.01);
         }
     }
 }

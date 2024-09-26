@@ -71,6 +71,12 @@
     transition: all 0.4s $ease-out-expo;
     transform: translateY(-100%);
 
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
     .nav-is-active & {
         transform: translateY(0);
     }

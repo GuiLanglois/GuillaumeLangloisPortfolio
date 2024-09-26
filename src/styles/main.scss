@@ -28,6 +28,7 @@
 @import 'elements/headings';
 @import 'elements/links';
 @import 'elements/wrapper';
+@import 'elements/bold';
 
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
@@ -37,6 +38,7 @@
 @import 'components/header';
 @import 'components/footer';
 @import 'components/home';
+@import 'components/projects';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
