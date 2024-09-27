@@ -26,7 +26,7 @@ body {
 
 @media screen and (max-width: $breakpoint-ml) {
     body {
-        font-style: var(--font-size-content-tablet);
+        font-size: var(--font-size-content-tablet);
     }
 }
 
@@ -36,6 +36,6 @@ body {
 
 @media screen and (max-width: $breakpoint-sm) {
     body {
-        font-style: var(--font-size-content-mobile);
+        font-size: var(--font-size-content-mobile);
     }
 }
