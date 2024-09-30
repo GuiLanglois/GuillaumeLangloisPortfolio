@@ -1,0 +1,29 @@
+/* ==========================================================================
+   contact / components
+   ========================================================================== */
+
+.about-heading {
+    .text-scroll {
+        font-family: var(--font-secondary);
+        font-size: var(--font-size-h1-pc-contact);
+        white-space: nowrap;
+        display: flex;
+        width: 100%;
+        gap: 60px;
+        animation: scroll 10s infinite linear;
+    }
+
+    @keyframes scroll {
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+    .text-scroll:first-child {
+        background: yellow;
+    }
+
+    .text-scroll:last-child {
+        background: tomato;
+    }
+}
