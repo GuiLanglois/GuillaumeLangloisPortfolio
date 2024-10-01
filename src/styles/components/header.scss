@@ -163,7 +163,7 @@
             content: '';
             background-color: var(--color-black);
             transform: scaleX(1);
-            transition: 0.3s all;
+            transition: 0.3s all ease-in-out;
         }
 
         @media screen and (min-width: $breakpoint-md) {
@@ -182,7 +182,7 @@
                 width: 0%;
                 content: '';
                 background-color: var(--color-black);
-                transition: 0.3s all;
+                transition: 0.3s all ease-in-out;
                 z-index: -1;
             }
 
