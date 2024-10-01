@@ -72,6 +72,14 @@
                 transition: all 0.5s $ease-out-expo;
             }
 
+            .img-piege {
+                object-position: 0% 90%;
+            }
+
+            .img-bsc {
+                object-position: 0% 65%;
+            }
+
             .card-project__content {
                 position: absolute;
                 bottom: 20px;
