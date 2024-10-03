@@ -4,6 +4,8 @@
 
 .form {
     --input-padding: 0.5em;
+    max-width: 60%;
+    margin: 0 auto;
 
     h2 {
         font-size: var(--font-size-h2-pc-contact);
@@ -31,10 +33,33 @@
     }
 }
 
+.form__fieldsets {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
 .form__footer {
     display: flex;
     justify-content: center;
-    padding-top: 55px;
+    padding: 50px 0 150px;
+
+    .btn__submit {
+        background: transparent;
+        color: var(--color-black);
+
+        &:hover {
+            color: var(--color-white);
+        }
+
+        &:focus {
+            color: var(--color-white);
+
+            &::before {
+                transform: scale(1.01, 1.02);
+            }
+        }
+    }
 }
 
 .form__body {
@@ -44,7 +69,13 @@
 }
 
 .form__confirmation {
+    text-align: center;
+    padding-bottom: 300px;
     display: none;
+
+    p {
+        margin: 20px 0 0;
+    }
 
     .is-sent & {
         display: block;
@@ -59,17 +90,30 @@
     display: block;
     font-size: 2.4rem;
     font-weight: 400;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .input__element {
     background-color: var(--color-white);
-    border: solid 3px var(--color-black);
+    border: solid 2px var(--color-black);
     cursor: pointer;
     font-family: inherit;
+    font-size: 2.4rem;
     outline: none;
     padding: var(--input-padding);
     width: 100%;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 10;
+        background-color: tomato;
+    }
 
     &:-webkit-autofill,
     &:-webkit-autofill:active {
@@ -79,20 +123,15 @@
 
     &:hover,
     + .input__label:hover::before {
-        background-color: var(--color-white);
-        -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
+        background-color: rgba(32, 32, 32, 0.1);
     }
 
     &:focus,
     &:-webkit-autofill:focus,
     &:focus + .input__label:hover::before {
         background-color: var(--color-white);
-        box-shadow: 0 2px 4px rgba(25, 25, 25, 0.5);
+        box-shadow: 0 2px 4px rgba(32, 32, 32, 0.1);
         -webkit-box-shadow: inset 0 0 0 30px var(--color-white) !important;
-    }
-
-    &::placeholder {
-        color: rgba($color: #202020, $alpha: 0.5);
     }
 }
 
@@ -103,7 +142,7 @@
 .textarea {
     .input__element {
         resize: vertical;
-        height: 150px;
+        height: 180px;
     }
 }
 
@@ -112,16 +151,8 @@
    ========================================================================== */
 
 .error {
-    .input__element,
-    &.check .input__label::before,
-    &.radio .input__label::before,
-    .checkbox .input__label::before,
-    .radio .input__label::before {
-        box-shadow: inset 0 0 0 3px var(--color-error);
-        border: none;
-    }
-
-    .input__label {
-        color: var(--color-error);
+    .input__element {
+        // box-shadow: inset 0 0 0 2px var(--color-error);
+        border-color: var(--color-error);
     }
 }

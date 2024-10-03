@@ -12,34 +12,40 @@
     </div>
 </section>
 
-<section class="requete">
+<section class="query">
     <div class="wrapper">
         <form action="" class="form" data-component="Form">
             <div class="form__body">
                 <h2>Écris-moi!</h2>
                 <p class="instructions">Tous les champs sont obligatoires</p>
 
-                <fieldset class="grid">
-                    <div class="input">
-                        <label for="firstname" class="input__label">Prénom</label>
-                        <input type="text" class="input__element" name="firstname" id="firstname" required />
-                    </div>
+                <div class="form__fieldsets">
+                    <fieldset class="grid">
+                        <div class="input">
+                            <label for="firstname" class="input__label">Prénom</label>
+                            <input type="text" class="input__element" name="firstname" id="firstname" required />
+                        </div>
 
-                    <div class="input">
-                        <label for="lastname" class="input__label">Nom</label>
-                        <input type="text" class="input__element" name="lastname" id="lastname" required />
-                    </div>
+                        <div class="input">
+                            <label for="lastname" class="input__label">Nom</label>
+                            <input type="text" class="input__element" name="lastname" id="lastname" required />
+                        </div>
+                    </fieldset>
 
-                    <div class="input">
-                        <label for="email" class="input__label">Adresse courriel</label>
-                        <input type="email" class="input__element" name="email" id="email" required />
-                    </div>
+                    <fieldset>
+                        <div class="input">
+                            <label for="email" class="input__label">Adresse courriel</label>
+                            <input type="email" class="input__element" name="email" id="email" required />
+                        </div>
+                    </fieldset>
 
-                    <div class="input textarea">
-                        <label class="input__label" for="comment">Message</label>
-                        <textarea class="input__element" name="comment" id="comment" maxlength="1000" required></textarea>
-                    </div>
-                </fieldset>
+                    <fieldset>
+                        <div class="input textarea">
+                            <label class="input__label" for="comment">Message</label>
+                            <textarea class="input__element" name="comment" id="comment" maxlength="1000" required></textarea>
+                        </div>
+                    </fieldset>
+                </div>
 
                 <footer class="form__footer">
                     <button class="btn-sm btn__submit">Envoyer</button>
@@ -47,7 +53,7 @@
             </div>
 
             <div class="form__confirmation">
-                <h3>Merci</h3>
+                <h2>Merci</h2>
                 <p>Votre formulaire a bien été envoyé!</p>
             </div>
         </form>
