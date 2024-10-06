@@ -2,7 +2,7 @@ export default class Header {
   constructor(element) {
     this.element = element;
     this.scrollPosition = 0;
-    this.scrollLimit = 0.1;
+    this.scrollLimit = 0.025;
     this.lastScrollPosition = 0;
     this.html = document.documentElement;
 

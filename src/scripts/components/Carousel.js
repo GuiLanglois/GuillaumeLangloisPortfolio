@@ -31,7 +31,7 @@ export default class Carousel {
     if (variant == 'split') {
       this.options.breakpoints = {
         1024: {
-          slidesPerView: 2.5,
+          slidesPerView: 3.5,
         },
       };
     }

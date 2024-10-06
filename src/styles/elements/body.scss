@@ -10,6 +10,16 @@ html {
     ::-webkit-scrollbar {
         display: none;
     }
+
+    ::selection {
+        color: var(--color-white);
+        background: var(--color-black);
+    }
+
+    ::-moz-selection {
+        color: var(--color-white);
+        background: var(--color-black);
+    }
 }
 
 body {
