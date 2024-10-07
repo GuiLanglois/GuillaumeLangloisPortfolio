@@ -28,10 +28,18 @@ export default class Carousel {
   setOptions() {
     const variant = this.element.dataset.variant;
 
-    if (variant == 'split') {
+    if (variant == 'split-3') {
       this.options.breakpoints = {
         1024: {
           slidesPerView: 3.5,
+        },
+      };
+    }
+
+    if (variant == 'split-2') {
+      this.options.breakpoints = {
+        1024: {
+          slidesPerView: 2,
         },
       };
     }

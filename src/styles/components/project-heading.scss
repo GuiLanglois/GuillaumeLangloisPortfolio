@@ -1,0 +1,76 @@
+/* ==========================================================================
+   project-heading / components
+   ========================================================================== */
+
+.project-heading {
+    padding: 100px 0;
+
+    .heading-content {
+        display: grid;
+        grid-template-columns: 5fr 7fr;
+        gap: 30px;
+
+        .heading-text {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            p {
+                margin: 0;
+            }
+
+            h1 {
+                font-size: var(--font-size-h1-pc-project);
+                font-family: var(--font-primary);
+                font-weight: 600;
+            }
+
+            .text-info {
+                display: flex;
+                gap: 10px;
+            }
+
+            .text-skills {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                ul {
+                    margin: 0 auto;
+                    padding: 0;
+                    list-style: none;
+                    display: flex;
+                    gap: 20px;
+
+                    .logo-after {
+                        display: flex;
+                        gap: 20px;
+
+                        &::after {
+                            content: '';
+                            width: 4px;
+                            height: 100%;
+                            background: var(--color-black);
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .text-cta {
+                padding-top: 20px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .heading-reel {
+        border: 6px solid var(--color-black);
+
+        img {
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}

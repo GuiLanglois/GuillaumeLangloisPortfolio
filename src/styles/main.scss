@@ -34,6 +34,7 @@
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
 @import '../../node_modules/swiper/swiper-bundle';
+@import '../../node_modules/swiper/modules/pagination';
 @import 'components/icons';
 @import 'components/header';
 @import 'components/footer';
@@ -45,8 +46,11 @@
 @import 'components/skills';
 @import 'components/hobbies';
 @import 'components/qualities';
+@import 'components/project-heading';
+@import 'components/project-content';
 
 // UTILITIES
 // Utilitaires et classes auxiliaires avec possibilité de remplacer tout ce qui précède, par exemple masquer les éléments de la page
 @import 'utilities/accessibility';
 @import 'utilities/spacing';
+@import 'utilities/align-right';
