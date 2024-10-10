@@ -1,14 +1,6 @@
-<svg width="175" height="175" viewBox="0 0 175 175" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_3536_4008)">
-<path d="M171.818 3.18182V87.5V171.818H3.18182V87.5V3.18182H171.818ZM175 0H0V175H175V0Z" fill="#202020"/>
-<path d="M133 60.375C138.799 60.375 143.5 55.7719 143.5 50.0938C143.5 44.4156 138.799 39.8125 133 39.8125C127.201 39.8125 122.5 44.4156 122.5 50.0938C122.5 55.7719 127.201 60.375 133 60.375Z" fill="#202020" stroke="#202020" stroke-miterlimit="10"/>
-<path d="M143.5 68.6875H122.5V135.188H143.5V68.6875Z" fill="#202020" stroke="#202020" stroke-miterlimit="10"/>
-<path d="M59.1021 43.75H86.2357L114.625 135.188H92.3872L85.2979 111.745H59.1021L52.5373 135.188H31.0625L59.1021 43.75Z" fill="#202020" stroke="#202020" stroke-miterlimit="10"/>
-<path d="M62.125 96.25L71.7061 59.0625L82.25 96.25H62.125Z" fill="#FAFAFA" stroke="#202020" stroke-miterlimit="10"/>
-</g>
-<defs>
-<clipPath id="clip0_3536_4008">
-<rect width="175" height="175" fill="white"/>
-</clipPath>
-</defs>
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+<svg width="800px" height="800px" viewBox="0 0 76 76" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full" enable-background="new 0 0 76.00 76.00" xml:space="preserve">
+	<path fill="#000000" fill-opacity="1" stroke-width="0.2" stroke-linejoin="round" d="M 30.4822,22.8009L 37.3426,22.8009L 46.9122,52.2525L 41.1446,52.2525L 38.4785,43.9062L 29.1276,43.9062L 26.5929,52.2525L 21.0439,52.2525L 30.4822,22.8009 Z M 32.2736,32.5887L 30.0017,39.8432L 37.5616,39.8432L 35.2452,32.5887C 34.6774,30.7977 34.1965,28.7872 33.7601,27.083L 33.6723,27.083C 33.2351,28.7872 32.7982,30.8409 32.2736,32.5887 Z M 48.7023,25.0292C 48.7023,23.3687 49.9255,22.1014 51.717,22.1014C 53.5521,22.1014 54.6885,23.3687 54.7322,25.0292C 54.7322,26.6462 53.5521,27.9135 51.6733,27.9135C 49.8819,27.9135 48.7023,26.6462 48.7023,25.0292 Z M 49.0077,52.2525L 49.0077,30.9723L 54.4267,30.9723L 54.4267,52.2525L 49.0077,52.2525 Z "/>
 </svg>
