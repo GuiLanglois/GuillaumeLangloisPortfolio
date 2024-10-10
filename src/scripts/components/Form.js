@@ -27,7 +27,7 @@ export default class Form {
       console.log('Valide');
 
       // Envoie ajax du formulaire
-      this.showConformation();
+      this.showConfirmation();
     } else {
       console.log('Fail');
     }
@@ -77,7 +77,7 @@ export default class Form {
     container.classList.add('error');
   }
 
-  showConformation() {
+  showConfirmation() {
     this.element.classList.add('is-sent');
   }
 }

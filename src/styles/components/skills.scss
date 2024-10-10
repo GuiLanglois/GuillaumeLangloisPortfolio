@@ -8,50 +8,50 @@
         padding-bottom: 50px;
     }
 
-    .cards {
-        padding: 0 30px;
+    .swiper-wrapper:first-child {
+        padding-left: 30px;
+    }
 
-        .card {
-            border: 6px solid var(--color-black);
-            width: 400px !important;
-            height: 400px;
+    .card {
+        border: 6px solid var(--color-black);
+        max-width: 400px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        transition: all 0.4s ease-in-out;
+
+        .card-content {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            padding: 30px;
-            transition: all 0.4s ease-in-out;
+            height: 100%;
+
+            p {
+                margin: 0;
+                color: var(--color-white);
+                opacity: 0;
+                transition: all 0.4s ease-in-out;
+            }
+
+            svg {
+                transition: all 0.4s ease-in-out;
+            }
+        }
+
+        &:hover {
+            background: var(--color-black);
 
             .card-content {
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-                align-items: center;
-                height: 100%;
-
                 p {
-                    margin: 0;
-                    color: var(--color-white);
-                    opacity: 0;
-                    transition: all 0.4s ease-in-out;
+                    opacity: 1;
                 }
 
                 svg {
-                    transition: all 0.4s ease-in-out;
-                }
-            }
-
-            &:hover {
-                background: var(--color-black);
-
-                .card-content {
-                    p {
-                        opacity: 1;
-                    }
-
-                    svg {
-                        color: var(--color-white);
-                        fill: var(--color-white);
-                    }
+                    color: var(--color-white);
+                    fill: var(--color-white);
                 }
             }
         }
