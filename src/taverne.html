@@ -1,261 +1,319 @@
 {% include '_partials/_header.html' %}
 
-<section class="project-heading">
-    <div class="wrapper">
-        <div class="heading-content">
-            <div class="heading-text">
-                <h1 data-scrolly="fromTop">
-                    Design d’une
-                    <em>escape room</em>
-                    en réalité virtuelle sur Unity
-                </h1>
+<main>
+    <section class="project-heading">
+        <div class="wrapper">
+            <div class="heading-content">
+                <div class="heading-text">
+                    <h1 data-scrolly="fromTop">
+                        Design d’une
+                        <em>escape room</em>
+                        en réalité virtuelle sur Unity
+                    </h1>
 
-                <div class="text-info" data-scrolly="fromLeft">
-                    <p>Projet étudiant</p>
-                    <p>|</p>
-                    <p>Jeu vidéo</p>
-                </div>
-
-                <div class="text-credits">
-                    <p data-scrolly="fromLeft">Arrangement: Guillaume Langlois</p>
-                    <p data-scrolly="fromLeft">Assets: I.We.D</p>
-                </div>
-
-                <div class="text-skills">
-                    <p data-scrolly="fromLeft">Compétences utiles:</p>
-
-                    <ul data-scrolly="fromLeft">
-                        <li class="logo logo-after">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-unity"></use>
-                            </svg>
-                        </li>
-
-                        <li class="logo logo-after">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-csharp"></use>
-                            </svg>
-                        </li>
-
-                        <li class="logo logo-after">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-blender"></use>
-                            </svg>
-                        </li>
-
-                        <li class="logo">
-                            <svg class="icon icon--md">
-                                <use xlink:href="#icon-github"></use>
-                            </svg>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="text-cta" data-scrolly="fromBottom">
-                    <a href="#" class="btn-sm">Essayer le jeu</a>
-                </div>
-            </div>
-
-            <div class="heading-reel" data-scrolly="fromRight">
-                <video src="assets/videos/taverne-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="project-content">
-    <div class="wrapper">
-        <div class="content-right">
-            <div class="content-img" data-scrolly="fromLeft">
-                <img src="assets/images/taverne-gameplay.png" alt="Image du gameplay du jeu de la taverne" />
-            </div>
-
-            <div class="content-text" data-scrolly="fromRight">
-                <h2>Description du projet</h2>
-
-                <p>
-                    Ce cours
-                    <strong>niveau de jeu</strong>
-                    a été réalisé dans le cadre d’un
-                    <strong>cours</strong>
-                    de
-                    <strong>jeu vidéo.</strong>
-                    Pour sortir de la taverne, il faut
-                    <strong>trouver</strong>
-                    les
-                    <strong>3 clés</strong>
-                    cachées à différents endroits et les ramener dans les
-                    <strong>serrures</strong>
-                    à côté de la porte.
-                </p>
-            </div>
-        </div>
-
-        <div class="content-left align-right">
-            <div class="content-img" data-scrolly="fromRight">
-                <img src="assets/images/taverne-store.png" alt="Image du package d'assets dans l'asset store de Unity" />
-            </div>
-
-            <div class="content-text" data-scrolly="fromLeft">
-                <h2>Processus de création</h2>
-
-                <p>
-                    Au début de mon processus de création, il me fallait un
-                    <strong>thème.</strong>
-                    J’ai cherché dans
-                    <strong><em>l’asset store</em></strong>
-                    de
-                    <strong>Unity</strong>
-                    pour des
-                    <em>assets</em>
-                    très simples en
-                    <strong><em>lowpoly,</em></strong>
-                    pour que je puisse facilement en
-                    <strong>créer de nouveaux</strong>
-                    au besoin.
-                </p>
-            </div>
-        </div>
-
-        <div class="content-carousel">
-            <div class="content-text" data-scrolly="fromBottom">
-                <h2>
-                    Modélisation
-                    <em>d’assets</em>
-                    personnalisés
-                </h2>
-
-                <p>
-                    Par la suite, j’ai remarqué qu’il manquait quelques assets pour réaliser mon projet. J’ai donc utilisé mes
-                    <strong>compétences</strong>
-                    sur
-                    <strong>Blender</strong>
-                    pour
-                    <strong>modéliser</strong>
-                    la
-                    <strong>porte,</strong>
-                    le
-                    <strong>plancher/plafond,</strong>
-                    2 types de
-                    <strong>murs</strong>
-                    et les
-                    <strong>serrures.</strong>
-                </p>
-            </div>
-
-            <div class="carousel-img" data-scrolly="fromBottom">
-                <div class="swiper" data-component="Carousel" data-variant="split-2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="content-img">
-                                <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="content-img">
-                                <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="content-img">
-                                <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="content-img">
-                                <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="content-img">
-                                <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
-                            </div>
-                        </div>
+                    <div class="text-info" data-scrolly="fromLeft">
+                        <p>Projet étudiant</p>
+                        <p>|</p>
+                        <p>Jeu vidéo</p>
                     </div>
 
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
+                    <div class="text-credits">
+                        <p data-scrolly="fromLeft">Arrangement: Guillaume Langlois</p>
+                        <p data-scrolly="fromLeft">Assets: I.We.D</p>
+                    </div>
+
+                    <div class="text-skills">
+                        <p data-scrolly="fromLeft">Compétences utiles:</p>
+
+                        <ul data-scrolly="fromLeft">
+                            <li class="logo logo-after">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-unity"></use>
+                                </svg>
+                            </li>
+
+                            <li class="logo logo-after">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-csharp"></use>
+                                </svg>
+                            </li>
+
+                            <li class="logo logo-after">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-blender"></use>
+                                </svg>
+                            </li>
+
+                            <li class="logo">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-github"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="text-cta" data-scrolly="fromBottom">
+                        <a href="#" class="btn-sm">Essayer le jeu</a>
+                    </div>
+                </div>
+
+                <div class="heading-reel" data-scrolly="fromRight">
+                    <video src="assets/videos/taverne-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="content-right">
-            <div class="content-img" data-scrolly="fromLeft">
-                <video src="assets/videos/taverne-fire.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+    <section class="project-content">
+        <div class="wrapper">
+            <div class="content-right">
+                <figure class="content-media">
+                    <div class="content-img" data-scrolly="fromLeft">
+                        <img src="assets/images/taverne-gameplay.png" alt="Image du gameplay du jeu de la taverne" />
+                    </div>
+                    <figcaption>
+                        Exemple de
+                        <em>gameplay</em>
+                        du jeu
+                    </figcaption>
+                </figure>
+
+                <div class="content-text" data-scrolly="fromRight">
+                    <h2>Description du projet</h2>
+
+                    <p>
+                        Ce cours
+                        <strong>niveau de jeu</strong>
+                        a été réalisé dans le cadre d’un
+                        <strong>cours</strong>
+                        de
+                        <strong>jeu vidéo.</strong>
+                        Pour sortir de la taverne, il faut
+                        <strong>trouver</strong>
+                        les
+                        <strong>3 clés</strong>
+                        cachées à différents endroits et les ramener dans les
+                        <strong>serrures</strong>
+                        à côté de la porte.
+                    </p>
+                </div>
             </div>
 
-            <div class="content-text" data-scrolly="fromRight">
-                <h2>Création d'une flamme</h2>
+            <div class="content-left align-right">
+                <figure class="content-media">
+                    <div class="content-img" data-scrolly="fromRight">
+                        <img src="assets/images/taverne-store.png" alt="Image du package d'assets dans l'asset store de Unity" />
+                    </div>
+                    <figcaption>
+                        Le
+                        <em>pack d'assets</em>
+                        utilisé
+                    </figcaption>
+                </figure>
 
-                <p>
-                    J’ai aussi eu à utiliser le
-                    <strong>système de particules</strong>
-                    de Unity pour faire une
-                    <strong>animation</strong>
-                    de feu pour les
-                    <strong>torches.</strong>
-                    Il s’agit
-                    <strong>d’images 2D</strong>
-                    de
-                    <strong>feu</strong>
-                    qui
-                    <strong>rapetissent</strong>
-                    avec le temps jusqu’à
-                    <strong>disparaitre,</strong>
-                    ce qui donne
-                    <strong>l’illusion</strong>
-                    de flamme qui va assez bien avec le style
-                    <em>lowpoly</em>
-                    du reste de la scène.
-                </p>
+                <div class="content-text" data-scrolly="fromLeft">
+                    <h2>Processus de création</h2>
+
+                    <p>
+                        Au début de mon processus de création, il me fallait un
+                        <strong>thème.</strong>
+                        J’ai cherché dans
+                        <strong><em>l’asset store</em></strong>
+                        de
+                        <strong>Unity</strong>
+                        pour des
+                        <em>assets</em>
+                        très simples en
+                        <strong><em>lowpoly,</em></strong>
+                        pour que je puisse facilement en
+                        <strong>créer de nouveaux</strong>
+                        au besoin.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-carousel">
+                <div class="content-text" data-scrolly="fromBottom">
+                    <h2>
+                        Modélisation
+                        <em>d’assets</em>
+                        personnalisés
+                    </h2>
+
+                    <p>
+                        Par la suite, j’ai remarqué qu’il manquait quelques assets pour réaliser mon projet. J’ai donc utilisé mes
+                        <strong>compétences</strong>
+                        sur
+                        <strong>Blender</strong>
+                        pour
+                        <strong>modéliser</strong>
+                        la
+                        <strong>porte,</strong>
+                        le
+                        <strong>plancher/plafond,</strong>
+                        2 types de
+                        <strong>murs</strong>
+                        et les
+                        <strong>serrures.</strong>
+                    </p>
+                </div>
+
+                <div class="carousel-img" data-scrolly="fromBottom">
+                    <div class="swiper" data-component="Carousel" data-variant="split-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="content-img">
+                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
+                                    </div>
+                                    <figcaption>
+                                        <em>Prefab</em>
+                                        de la porte
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="content-img">
+                                        <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
+                                    </div>
+                                    <figcaption>
+                                        <em>Prefab</em>
+                                        d'une tuile de plafond/plancher
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="content-img">
+                                        <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
+                                    </div>
+                                    <figcaption>
+                                        <em>Prefab</em>
+                                        d'une section de mur standard
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="content-img">
+                                        <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
+                                    </div>
+                                    <figcaption>
+                                        <em>Prefab</em>
+                                        de la section du mur de la porte
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <figure>
+                                    <div class="content-img">
+                                        <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
+                                    </div>
+                                    <figcaption>
+                                        <em>Prefab</em>
+                                        d'une serrure
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <figure class="content-media">
+                    <div class="content-img" data-scrolly="fromLeft">
+                        <video src="assets/videos/taverne-fire.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                    </div>
+                    <figcaption>
+                        Exemple de flamme
+                        <em>lowpoly</em>
+                    </figcaption>
+                </figure>
+
+                <div class="content-text" data-scrolly="fromRight">
+                    <h2>Création d'une flamme</h2>
+
+                    <p>
+                        J’ai aussi eu à utiliser le
+                        <strong>système de particules</strong>
+                        de Unity pour faire une
+                        <strong>animation</strong>
+                        de feu pour les
+                        <strong>torches.</strong>
+                        Il s’agit
+                        <strong>d’images 2D</strong>
+                        de
+                        <strong>feu</strong>
+                        qui
+                        <strong>rapetissent</strong>
+                        avec le temps jusqu’à
+                        <strong>disparaitre,</strong>
+                        ce qui donne
+                        <strong>l’illusion</strong>
+                        de flamme qui va assez bien avec le style
+                        <em>lowpoly</em>
+                        du reste de la scène.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-left align-right">
+                <figure class="content-media">
+                    <div class="content-img" data-scrolly="fromRight">
+                        <img src="assets/images/taverne-script.png" alt="Image du script qui vérifie si les serrures contiennent des clés" />
+                    </div>
+                    <figcaption>
+                        Script du
+                        <em>level manager</em>
+                    </figcaption>
+                </figure>
+
+                <div class="content-text" data-scrolly="fromLeft">
+                    <h2>Écriture d'un script</h2>
+
+                    <p>
+                        Dans ce niveau, il est possible de
+                        <strong>prendre</strong>
+                        tous les
+                        <strong>objets</strong>
+                        présents sur les tables (sauf les chandelles). Par contre,
+                        <strong>seules</strong>
+                        les
+                        <strong>clés</strong>
+                        peuvent
+                        <strong>ouvrir</strong>
+                        la
+                        <strong>porte</strong>
+                        (évidemment!). J'ai du écrire un
+                        <strong>script</strong>
+                        qui vérifie
+                        <strong>combien</strong>
+                        de
+                        <strong>serrures</strong>
+                        contiennent des
+                        <strong>clés.</strong>
+                        Si
+                        <strong>toutes</strong>
+                        les
+                        <strong>clés</strong>
+                        sont
+                        <strong>présentes,</strong>
+                        la porte
+                        <strong>s'ouvre.</strong>
+                    </p>
+                </div>
             </div>
         </div>
-
-        <div class="content-left align-right">
-            <div class="content-img" data-scrolly="fromRight">
-                <img src="assets/images/taverne-script.png" alt="Image du script qui vérifie si les serrures contiennent des clés" />
-            </div>
-
-            <div class="content-text" data-scrolly="fromLeft">
-                <h2>Écriture d'un script</h2>
-
-                <p>
-                    Dans ce niveau, il est possible de
-                    <strong>prendre</strong>
-                    tous les
-                    <strong>objets</strong>
-                    présents sur les tables (sauf les chandelles). Par contre,
-                    <strong>seules</strong>
-                    les
-                    <strong>clés</strong>
-                    peuvent
-                    <strong>ouvrir</strong>
-                    la
-                    <strong>porte</strong>
-                    (évidemment!). J'ai du écrire un
-                    <strong>script</strong>
-                    qui vérifie
-                    <strong>combien</strong>
-                    de
-                    <strong>serrures</strong>
-                    contiennent des
-                    <strong>clés.</strong>
-                    Si
-                    <strong>toutes</strong>
-                    les
-                    <strong>clés</strong>
-                    sont
-                    <strong>présentes,</strong>
-                    la porte
-                    <strong>s'ouvre.</strong>
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</main>
 
 {% include '_partials/_footer.html' %}
