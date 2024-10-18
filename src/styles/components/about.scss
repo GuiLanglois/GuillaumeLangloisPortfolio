@@ -46,6 +46,9 @@
                 bottom: 6px;
                 right: 6px;
                 height: 125%;
+                -webkit-filter: brightness(125%);
+                -moz-filter: brightness(125%);
+                filter: brightness(125%);
             }
         }
     }
