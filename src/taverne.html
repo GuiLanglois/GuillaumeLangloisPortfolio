@@ -67,16 +67,36 @@
     <section class="project-content">
         <div class="wrapper">
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Image du gameplay du jeu de la taverne" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        Exemple de
-                        <em>gameplay</em>
-                        du jeu
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/taverne-gameplay.png" alt="Image du gameplay du jeu de la taverne" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">
+                            Exemple de
+                            <em>gameplay</em>
+                            du jeu
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/taverne-gameplay.png" alt="Image du gameplay du jeu de la taverne" />
+                            </div>
+                            <figcaption>
+                                Exemple de
+                                <em>gameplay</em>
+                                du jeu
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">Description du projet</h2>
@@ -100,16 +120,36 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-store.png" alt="Image du package d'assets dans l'asset store de Unity" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">
-                        Le
-                        <em>pack d'assets</em>
-                        utilisé
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/taverne-store.png" alt="Image du package d'assets dans l'asset store de Unity" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">
+                            Le
+                            <em>pack d'assets</em>
+                            utilisé
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/taverne-store.png" alt="Image du package d'assets dans l'asset store de Unity" />
+                            </div>
+                            <figcaption>
+                                Le
+                                <em>pack d'assets</em>
+                                utilisé
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Processus de création</h2>
@@ -162,63 +202,158 @@
                     <div class="swiper" data-component="Carousel" data-variant="split-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        de la porte
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Prefab</em>
+                                            de la porte
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Prefab</em>
+                                                de la porte
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une tuile de plafond/plancher
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Prefab</em>
+                                            d'une tuile de plafond/plancher
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Prefab</em>
+                                                d'une tuile de plafond/plancher
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une section de mur standard
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Prefab</em>
+                                            d'une section de mur standard
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Prefab</em>
+                                                d'une section de mur standard
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        de la section du mur de la porte
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Prefab</em>
+                                            de la section du mur de la porte
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Prefab</em>
+                                                de la section du mur de la porte
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une serrure
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Prefab</em>
+                                            d'une serrure
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img js-open">
+                                                <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Prefab</em>
+                                                d'une serrure
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
 
@@ -229,15 +364,34 @@
             </div>
 
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <video src="assets/videos/taverne-fire.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        Exemple de flamme
-                        <em>lowpoly</em>
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <video src="assets/videos/taverne-fire.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                        </div>
+                        <figcaption data-scrolly="fromLeft">
+                            Exemple de flamme
+                            <em>lowpoly</em>
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <video src="assets/videos/taverne-fire.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                            </div>
+                            <figcaption>
+                                Exemple de flamme
+                                <em>lowpoly</em>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">Création d'une flamme</h2>
@@ -267,15 +421,34 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-script.png" alt="Image du script qui vérifie si les serrures contiennent des clés" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">
-                        Script du
-                        <em>level manager</em>
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/taverne-script.png" alt="Image du script qui vérifie si les serrures contiennent des clés" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">
+                            Script du
+                            <em>level manager</em>
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/taverne-script.png" alt="Image du script qui vérifie si les serrures contiennent des clés" />
+                            </div>
+                            <figcaption>
+                                Script du
+                                <em>level manager</em>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Écriture d'un script</h2>

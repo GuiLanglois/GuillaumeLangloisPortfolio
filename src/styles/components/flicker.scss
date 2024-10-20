@@ -1,0 +1,59 @@
+/* ==========================================================================
+   flicker / components
+   ========================================================================== */
+
+@-webkit-keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.075;
+    }
+}
+
+@-moz-keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.075;
+    }
+}
+
+@keyframes flicker {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0.075;
+    }
+}
+
+.flicker {
+    --animation-time: 4s;
+    --delay-time: 1s;
+
+    -webkit-animation-name: flicker;
+    -webkit-animation-duration: var(--animation-time);
+    -webkit-animation-delay: var(--delay-time);
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+
+    -moz-animation-name: flicker;
+    -moz-animation-duration: var(--animation-time);
+    -moz-animation-delay: var(--delay-time);
+    -moz-animation-timing-function: ease-in-out;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-direction: alternate;
+
+    animation-name: flicker;
+    animation-duration: var(--animation-time);
+    animation-delay: var(--delay-time);
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

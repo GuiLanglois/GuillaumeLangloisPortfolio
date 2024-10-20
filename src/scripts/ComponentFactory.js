@@ -3,6 +3,9 @@ import Carousel from './components/Carousel';
 import Header from './components/Header';
 import Form from './components/Form';
 import YouTube from './components/YouTube';
+import Modal from './components/Modal';
+import TextFollow from './components/TextFollow';
+import Flicker from './components/Flicker';
 
 export default class ComponentFactory {
   constructor() {
@@ -12,6 +15,9 @@ export default class ComponentFactory {
       Header,
       Form,
       YouTube,
+      Modal,
+      TextFollow,
+      Flicker,
     };
 
     this.init();
