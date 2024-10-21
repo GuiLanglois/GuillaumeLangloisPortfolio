@@ -1,0 +1,473 @@
+{% include '_partials/_header.html' %}
+
+<main>
+    <section class="project-heading">
+        <div class="wrapper">
+            <div class="heading-content">
+                <div class="heading-text">
+                    <h1 data-scrolly="fromTop">Projection interactive sur TouchDesigner</h1>
+
+                    <div class="text-info" data-scrolly="fromLeft">
+                        <p>Projet étudiant</p>
+                        <p>|</p>
+                        <p>Médias Interactifs</p>
+                    </div>
+
+                    <div class="text-credits">
+                        <p data-scrolly="fromLeft">Crédits: Guillaume Langlois</p>
+                    </div>
+
+                    <div class="text-skills">
+                        <p data-scrolly="fromLeft">Compétence utile:</p>
+
+                        <ul data-scrolly="fromLeft">
+                            <li class="logo">
+                                <svg class="icon icon--md">
+                                    <use xlink:href="#icon-touchdesigner"></use>
+                                </svg>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="text-cta" data-scrolly="fromBottom">
+                        <a href="https://youtu.be/-Autg_Md8WI" target="_blank" class="btn-sm">Voir une démo</a>
+                    </div>
+                </div>
+
+                <div class="heading-reel" data-scrolly="fromRight">
+                    <video src="assets/videos/echos-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="project-content">
+        <div class="wrapper">
+            <div class="content-right">
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <video src="assets/videos/echos-idle.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                        </div>
+                        <figcaption data-scrolly="fromLeft">La projection en attente d'un utilisateur</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <video src="assets/videos/echos-idle.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                            </div>
+                            <figcaption>La projection en attente d'un utilisateur</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
+
+                <div class="content-text">
+                    <h2 data-scrolly="fromRight">Description du projet</h2>
+
+                    <p data-scrolly="fromRight">
+                        Cette
+                        <strong>projection interactive</strong>
+                        est rendue
+                        <strong>possible</strong>
+                        grâce à une
+                        <strong>Kinect</strong>
+                        connectée à
+                        <strong>TouchDesigner.</strong>
+                        La projection
+                        <strong>s'active</strong>
+                        lorsque la Kinect
+                        <strong>détecte</strong>
+                        un
+                        <strong>usager.</strong>
+                        Autrement, elle est en
+                        <strong>mode attente</strong>
+                        et un
+                        <strong>code QR</strong>
+                        est présent pour
+                        <strong>avoir</strong>
+                        plus de
+                        <strong>détails</strong>
+                        sur l'œuvre.
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-left align-right">
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/echos-switch.png" alt="Les nodes qui détectent l'utilisteur et changent le mode" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">Les nodes qui détectent l'utilisteur et changent le mode</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/echos-switch.png" alt="Les nodes qui détectent l'utilisteur et changent le mode" />
+                            </div>
+                            <figcaption>Les nodes qui détectent l'utilisteur et changent le mode</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
+
+                <div class="content-text">
+                    <h2 data-scrolly="fromLeft">Processus de création</h2>
+
+                    <p data-scrolly="fromLeft">
+                        La
+                        <strong>première chose</strong>
+                        à faire était de
+                        <strong>connecter</strong>
+                        la
+                        <strong>Kinect</strong>
+                        à
+                        <strong>TouchDesigner</strong>
+                        et de
+                        <strong>créer</strong>
+                        deux
+                        <strong>modes</strong>
+                        pour faire en sorte qu'elle
+                        <strong>passe d'un à l'autre</strong>
+                        lorsqu'un
+                        <strong>utilisateur</strong>
+                        est
+                        <strong>détecté.</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="content-carousel">
+                <div class="content-text">
+                    <h2 data-scrolly="fromBottom">Création de différents composants</h2>
+
+                    <p data-scrolly="fromBottom">
+                        Par la suite, j’ai
+                        <strong>créé</strong>
+                        quelques
+                        <strong>composantes</strong>
+                        différentes. Ces composantes
+                        <strong>forment</strong>
+                        la
+                        <strong>majorité</strong>
+                        du
+                        <strong>nombre</strong>
+                        de
+                        <strong>nodes</strong>
+                        du projet.
+                    </p>
+                </div>
+
+                <div class="carousel-img" data-scrolly="fromBottom">
+                    <div class="swiper" data-component="Carousel" data-variant="split-2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-music.png" alt="Nodes qui forment la composante « Musique »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « Musique »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/echos-music.png" alt="Nodes qui forment la composante « Musique »" />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « Musique »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-autonome.png" alt="Nodes qui forment la composante « mode_autonome »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « mode_autonome »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/echos-autonome.png" alt="Nodes qui forment la composante « mode_autonome »" />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « mode_autonome »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-interactive.png" alt="Nodes qui forment la composante « mode_interactif »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « mode_interactif »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/echos-interactive.png" alt="Nodes qui forment la composante « mode_interactif »" />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « mode_interactif »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-hands.png" alt="Nodes qui forment la composante « handsY »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « handsY »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/echos-hands.png" alt="Nodes qui forment la composante « handsY »" />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « handsY »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-silhouette.png" alt="Nodes qui forment la composante « silhouette »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « silhouette »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img js-open">
+                                                <img src="assets/images/echos-silhouette.png" alt="Nodes qui forment la composante « silhouette »" />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « silhouette »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img
+                                                src="assets/images/echos-silhouette-background.png"
+                                                alt="Nodes qui forment la composante « silhouette_bckgrnd »"
+                                            />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « silhouette_bckgrnd »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img js-open">
+                                                <img
+                                                    src="assets/images/echos-silhouette-background.png"
+                                                    alt="Nodes qui forment la composante « silhouette_bckgrnd »"
+                                                />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « silhouette_bckgrnd »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-silhouette-player.png" alt="Nodes qui forment la composante « silhouette_player »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « silhouette_player »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img js-open">
+                                                <img
+                                                    src="assets/images/echos-silhouette-player.png"
+                                                    alt="Nodes qui forment la composante « silhouette_player »"
+                                                />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « silhouette_player »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/echos-silhouette-color.png" alt="Nodes qui forment la composante « silhouette_color »" />
+                                        </div>
+                                        <figcaption>Nodes qui forment la composante « silhouette_color »</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img js-open">
+                                                <img
+                                                    src="assets/images/echos-silhouette-color.png"
+                                                    alt="Nodes qui forment la composante « silhouette_color »"
+                                                />
+                                            </div>
+                                            <figcaption>Nodes qui forment la composante « silhouette_color »</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-right">
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/echos-web.png" alt="La page web ouverte au scan du code QR" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">La page web ouverte au scan du code QR</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/echos-web.png" alt="La page web ouverte au scan du code QR" />
+                            </div>
+                            <figcaption>La page web ouverte au scan du code QR</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
+
+                <div class="content-text">
+                    <h2 data-scrolly="fromRight">Création d'une mini page web</h2>
+
+                    <p data-scrolly="fromRight">
+                        La
+                        <strong>touche finale</strong>
+                        du projet était de
+                        <strong>faire</strong>
+                        une petite
+                        <strong>page web</strong>
+                        avec toutes les
+                        <strong>informations</strong>
+                        sur
+                        <strong>l'œuvre:</strong>
+                        son
+                        <strong>nom,</strong>
+                        un
+                        <strong>sous-titre,</strong>
+                        le
+                        <strong>nom</strong>
+                        de
+                        <strong>l'auteur</strong>
+                        avec le
+                        <strong>contexte de réalisation</strong>
+                        de l'œuvre et les
+                        <strong>crédits</strong>
+                        de la
+                        <strong>trame sonore</strong>
+                        avec sa
+                        <strong>licence</strong>
+                        <strong><em>Creative Commons.</em></strong>
+                        Cette
+                        <strong>page</strong>
+                        est
+                        <strong>accessible</strong>
+                        en
+                        <strong>scannant</strong>
+                        le
+                        <strong>code QR</strong>
+                        du mode
+                        <strong>attente</strong>
+                        de la
+                        <strong>projection</strong>
+                        ou en
+                        <strong>
+                            cliquant
+                            <a href="https://guillaumelanglois.ca/echos-enchantes" target="_blank">ici</a>
+                        </strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% include '_partials/_footer.html' %}

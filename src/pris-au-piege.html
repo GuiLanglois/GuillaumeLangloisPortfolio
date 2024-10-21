@@ -41,7 +41,7 @@
                 </div>
 
                 <div class="heading-reel" data-scrolly="fromRight">
-                    <video src="assets/videos/taverne-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                    <video src="assets/videos/piege-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
                 </div>
             </div>
         </div>
@@ -50,12 +50,28 @@
     <section class="project-content">
         <div class="wrapper">
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Image du projet dans Blender" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">Image du projet dans Blender</figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/piege-overview.png" alt="Image du projet dans Blender" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">Image du projet dans Blender</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-overview.png" alt="Image du projet dans Blender" />
+                            </div>
+                            <figcaption>Image du projet dans Blender</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">Description du projet</h2>
@@ -80,15 +96,34 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-store.png" alt="Image d'une vidéo de Kane Pixels" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">
-                        Image originale des
-                        <em>Backrooms</em>
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/piege-backrooms.webp" alt="Image originale des Backrooms" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">
+                            Image originale des
+                            <em>Backrooms</em>
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-backrooms.webp" alt="Image originale des Backrooms" />
+                            </div>
+                            <figcaption>
+                                Image originale des
+                                <em>Backrooms</em>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Processus de création</h2>
@@ -127,6 +162,8 @@
                         de
                         <strong>papier peint,</strong>
                         de
+                        <strong>plinthes,</strong>
+                        de
                         <strong>tapis</strong>
                         et de
                         <strong>tuile de plafond</strong>
@@ -138,48 +175,103 @@
                     <div class="swiper" data-component="Carousel" data-variant="split-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption><em>IMAGE PLACEHOLDER</em></figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/piege-wallpaper.png" alt="Matériel du papier peint" />
+                                        </div>
+                                        <figcaption>Matériel du papier peint</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/piege-wallpaper.png" alt="Matériel du papier peint" />
+                                            </div>
+                                            <figcaption>Matériel du papier peint</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption><em>IMAGE PLACEHOLDER</em></figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/piege-plinth.png" alt="Matériel des plinthes" />
+                                        </div>
+                                        <figcaption>Matériel des plinthes</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/piege-plinth.png" alt="Matériel des plinthes" />
+                                            </div>
+                                            <figcaption>Matériel des plinthes</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption><em>IMAGE PLACEHOLDER</em></figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/piege-carpet.png" alt="Matériel du tapis" />
+                                        </div>
+                                        <figcaption>Matériel du tapis</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/piege-carpet.png" alt="Matériel du tapis" />
+                                            </div>
+                                            <figcaption>Matériel du tapis</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption><em>IMAGE PLACEHOLDER</em></figcaption>
-                                </figure>
-                            </div>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/piege-ceiling.png" alt="Matériel des tuiles du plafond" />
+                                        </div>
+                                        <figcaption>Matériel des tuiles du plafond</figcaption>
+                                    </figure>
 
-                            <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption><em>IMAGE PLACEHOLDER</em></figcaption>
-                                </figure>
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/piege-ceiling.png" alt="Matériel des tuiles du plafond" />
+                                            </div>
+                                            <figcaption>Matériel des tuiles du plafond</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
 
@@ -190,14 +282,28 @@
             </div>
 
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-store.png" alt="Image d'une vidéo de Kane Pixels" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        <em>DÉTAILS DU MATÉRIEL DU PLAFOND</em>
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/piege-lights.png" alt="Matériel du plafond avec les nodes qui ajoutent les lumières" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">Matériel du plafond avec les nodes qui ajoutent les lumières</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-lights.png" alt="Matériel du plafond avec les nodes qui ajoutent les lumières" />
+                            </div>
+                            <figcaption>Matériel du plafond avec les nodes qui ajoutent les lumières</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">Création du plafond</h2>
@@ -222,12 +328,34 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-gameplay.png" alt="Image du projet dans Blender" />
-                    </div>
-                    <figcaption data-scrolly="fromRight"><em>IMAGE PLACEHOLDER</em></figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/piege-addon.png" alt="Camera Shakify sur GitHub" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">
+                            <em>Camera Shakify</em>
+                            sur GitHub
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-addon.png" alt="Camera Shakify sur GitHub" />
+                            </div>
+                            <figcaption>
+                                <em>Camera Shakify</em>
+                                sur GitHub
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">
@@ -251,20 +379,34 @@
                         externe gratuit qui contient différents
                         <strong><em>presets</em></strong>
                         de
-                        <strong>mouvement de caméra</strong>
-                        utiles pour le
-                        <strong>réalisme.</strong>
+                        <strong>mouvement de caméra.</strong>
                     </p>
                 </div>
             </div>
 
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Image du projet dans Blender" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">IMAGE DU FANTÔME AVEC LE SYSTÈME DE TISSU</figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/piege-ghost.png" alt="Le fantôme avec son matériel et le système de tissu" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">Le fantôme avec son matériel et le système de tissu</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-ghost.png" alt="Le fantôme avec son matériel et le système de tissu" />
+                            </div>
+                            <figcaption>Le fantôme avec son matériel et le système de tissu</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text" data-scrolly="fromRight">
                     <h2>Modélisation d'un fantôme</h2>
@@ -285,12 +427,28 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-gameplay.png" alt="Image du projet dans Blender" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">IMAGE DU PROJET PREMIERE</figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/piege-premiere.png" alt="Mon animation dans Adobe Premiere Pro" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">Mon animation dans Adobe Premiere Pro</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/piege-premiere.png" alt="Mon animation dans Adobe Premiere Pro" />
+                            </div>
+                            <figcaption>Mon animation dans Adobe Premiere Pro</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Ambiance dans Premiere Pro</h2>

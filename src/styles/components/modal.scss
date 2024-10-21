@@ -43,7 +43,7 @@
         }
     }
 
-    .btn-close {
+    button.btn-close {
         position: absolute;
         top: 0;
         right: -80px;
@@ -63,12 +63,16 @@
             left: calc(50% - var(--bar-width) / 2);
 
             &:nth-child(1) {
-                rotate: 45deg;
+                transform: rotate(45deg);
             }
 
             &:nth-child(2) {
-                rotate: -45deg;
+                transform: rotate(-45deg);
             }
+        }
+
+        &:focus {
+            border: none;
         }
     }
 }

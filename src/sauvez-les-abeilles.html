@@ -47,7 +47,7 @@
                 </div>
 
                 <div class="heading-reel" data-scrolly="fromRight">
-                    <video src="assets/videos/taverne-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
+                    <video src="assets/videos/abeilles-reel.mp4" autoplay loop>Votre navigateur ne supporte pas l'élément vidéo.</video>
                 </div>
             </div>
         </div>
@@ -56,16 +56,28 @@
     <section class="project-content">
         <div class="wrapper">
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Structure des frames sur Figma" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        Structure des
-                        <em>frames</em>
-                        sur Figma
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/abeilles-overview.png" alt="Un écran du prototype" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">Un écran du prototype</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/abeilles-overview.png" alt="Un écran du prototype" />
+                            </div>
+                            <figcaption>Un écran du prototype</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">Description du projet</h2>
@@ -78,7 +90,7 @@
                         a été réalisé avec
                         <strong>Figma</strong>
                         dans le cadre d'un cours de
-                        <strong><em>**********DESIGN D'EXPÉRIENCE**********</em></strong>
+                        <strong>design d'expérience.</strong>
                         Le but du projet était de
                         <strong>concevoir</strong>
                         une
@@ -101,12 +113,28 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-gameplay.png" alt="Plan du parcours utilisateur" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">Plan du parcours utilisateur</figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/abeilles-plan.png" alt="Plan du parcours utilisateur" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">Plan du parcours utilisateur</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/abeilles-plan.png" alt="Plan du parcours utilisateur" />
+                            </div>
+                            <figcaption>Plan du parcours utilisateur</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Analyse de contenu</h2>
@@ -129,15 +157,34 @@
             </div>
 
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Wireframe du projet" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        <em>Wireframe</em>
-                        du projet
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/abeilles_wireframe.png" alt="Wireframe du projet" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">
+                            <em>Wireframe</em>
+                            du projet
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/abeilles_wireframe.png" alt="Wireframe du projet" />
+                            </div>
+                            <figcaption>
+                                <em>Wireframe</em>
+                                du projet
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">
@@ -202,63 +249,115 @@
                     <div class="swiper" data-component="Carousel" data-variant="split-2">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door.png" alt="Image de la porte modélisée dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        de la porte
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/abeilles-moodboard.png" alt="Moodboard du projet" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Moodboard</em>
+                                            du projet
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/abeilles-moodboard.png" alt="Moodboard du projet" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Moodboard</em>
+                                                du projet
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-ceiling.png" alt="Image du plafond/plancher modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une tuile de plafond/plancher
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/abeilles-guide.png" alt="Guide de styles du projet" />
+                                        </div>
+                                        <figcaption>Guide de styles du projet</figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/abeilles-guide.png" alt="Guide de styles du projet" />
+                                            </div>
+                                            <figcaption>Guide de styles du projet</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-wall.png" alt="Image du mur standard modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une section de mur standard
-                                    </figcaption>
-                                </figure>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/abeilles-design-system.png" alt="Design system du projet" />
+                                        </div>
+                                        <figcaption>
+                                            <em>Design system</em>
+                                            du projet
+                                        </figcaption>
+                                    </figure>
+
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/abeilles-design-system.png" alt="Design system du projet" />
+                                            </div>
+                                            <figcaption>
+                                                <em>Design system</em>
+                                                du projet
+                                            </figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-door_wall.png" alt="Image du mur de la porte modélisé dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        de la section du mur de la porte
-                                    </figcaption>
-                                </figure>
-                            </div>
+                                <div class="content-media" data-component="Modal">
+                                    <figure>
+                                        <div class="content-img js-open">
+                                            <img src="assets/images/abeilles-ui.png" alt="Design des interfaces finales" />
+                                        </div>
+                                        <figcaption>Design des interfaces finales</figcaption>
+                                    </figure>
 
-                            <div class="swiper-slide">
-                                <figure>
-                                    <div class="content-img">
-                                        <img src="assets/images/taverne-lock.png" alt="Image d'une serrure modélisée dans Blender" />
-                                    </div>
-                                    <figcaption>
-                                        <em>Prefab</em>
-                                        d'une serrure
-                                    </figcaption>
-                                </figure>
+                                    <dialog class="modal js-modal">
+                                        <figure>
+                                            <div class="content-img">
+                                                <img src="assets/images/abeilles-ui.png" alt="Design des interfaces finales" />
+                                            </div>
+                                            <figcaption>Design des interfaces finales</figcaption>
+                                        </figure>
+
+                                        <button class="btn-close js-close">
+                                            <span></span>
+                                            <span></span>
+                                        </button>
+                                    </dialog>
+                                </div>
                             </div>
                         </div>
 
@@ -269,12 +368,28 @@
             </div>
 
             <div class="content-left align-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromRight">
-                        <img src="assets/images/taverne-gameplay.png" alt="Création du logo du Adobe Illustrator" />
-                    </div>
-                    <figcaption data-scrolly="fromRight">Création du logo du Adobe Illustrator</figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromRight">
+                            <img src="assets/images/abeilles-logo.png" alt="Création du logo dans Adobe Illustrator" />
+                        </div>
+                        <figcaption data-scrolly="fromRight">Création du logo dans Adobe Illustrator</figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img js-open">
+                                <img src="assets/images/abeilles-logo.png" alt="Création du logo dans Adobe Illustrator" />
+                            </div>
+                            <figcaption>Création du logo dans Adobe Illustrator</figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromLeft">Création d'un logo</h2>
@@ -303,15 +418,34 @@
             </div>
 
             <div class="content-right">
-                <figure class="content-media">
-                    <div class="content-img" data-scrolly="fromLeft">
-                        <img src="assets/images/taverne-gameplay.png" alt="Wireframe du projet" />
-                    </div>
-                    <figcaption data-scrolly="fromLeft">
-                        Toutes les interfaces du
-                        <em>prototypage</em>
-                    </figcaption>
-                </figure>
+                <div class="content-media" data-component="Modal">
+                    <figure>
+                        <div class="content-img js-open" data-scrolly="fromLeft">
+                            <img src="assets/images/abeilles-prototype.png" alt="Toutes les interfaces prototypées" />
+                        </div>
+                        <figcaption data-scrolly="fromLeft">
+                            Toutes les interfaces
+                            <em>prototypées</em>
+                        </figcaption>
+                    </figure>
+
+                    <dialog class="modal js-modal">
+                        <figure>
+                            <div class="content-img">
+                                <img src="assets/images/abeilles-prototype.png" alt="Toutes les interfaces prototypées" />
+                            </div>
+                            <figcaption>
+                                Toutes les interfaces
+                                <em>prototypées</em>
+                            </figcaption>
+                        </figure>
+
+                        <button class="btn-close js-close">
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </dialog>
+                </div>
 
                 <div class="content-text">
                     <h2 data-scrolly="fromRight">
