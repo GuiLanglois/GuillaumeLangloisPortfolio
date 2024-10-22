@@ -206,3 +206,14 @@
         }
     }
 }
+
+@media screen and (max-width: $breakpoint-ml) {
+    .projects {
+        .cards-projects {
+            .card-left,
+            .card-right {
+                justify-content: center;
+            }
+        }
+    }
+}

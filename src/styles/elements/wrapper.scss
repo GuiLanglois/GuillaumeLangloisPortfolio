@@ -7,14 +7,14 @@
     margin: 0 auto;
 }
 
-@media screen and (max-width: $breakpoint-ml) {
+@media screen and (max-width: $breakpoint-lg) {
     .wrapper {
-        padding: 0 32px;
+        padding: 0 50px;
     }
 }
 
-@media screen and (max-width: $breakpoint-sm) {
+@media screen and (max-width: $breakpoint-md) {
     .wrapper {
-        padding: 0 24px;
+        padding: 0 20px;
     }
 }

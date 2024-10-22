@@ -5,7 +5,7 @@
 .footer {
     padding-bottom: 50px;
 
-    .wrapper {
+    .footer-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -18,12 +18,17 @@
             display: flex;
             justify-content: space-between;
             margin: 0;
+
+            .nav-socials__item {
+                font-size: var(--font-size-content-pc);
+            }
         }
     }
 
     .copyright {
         color: rgba($color: #202020, $alpha: 0.5);
         font-size: 2.4rem;
+        text-align: center;
 
         p {
             margin: 0;
@@ -35,4 +40,100 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .footer {
+        .copyright {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .footer {
+        padding-bottom: 20px;
+
+        .footer-content {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .nav-socials {
+            ul {
+                justify-content: center;
+                gap: 20px;
+            }
+        }
+
+        .copyright {
+            order: 3;
+            width: 100%;
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .footer {
+        .footer-content {
+            gap: 10px;
+        }
+
+        .nav-socials {
+            ul {
+                gap: 10px;
+            }
+        }
+
+        .copyright {
+            max-width: 40%;
+            padding-top: 10px;
+        }
+    }
+}
+
+/*
+   640px
+   ========================================================================== */
+
+@media screen and (max-width: 640px) {
+    .footer {
+        .nav-socials {
+            ul {
+                .nav-socials__item {
+                    font-size: 2.2rem;
+                    padding: 8px;
+                }
+            }
+        }
+
+        .copyright {
+            max-width: 60%;
+        }
+    }
+}
+
+/*
+   X-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .footer {
+        .copyright {
+            max-width: 100%;
+        }
+    }
 }
