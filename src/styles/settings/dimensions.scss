@@ -19,3 +19,13 @@ $breakpoint-xl: 1920px;
 
     --header-height: 150px;
 }
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    :root {
+        --header-height: 110px;
+    }
+}

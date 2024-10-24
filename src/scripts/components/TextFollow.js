@@ -11,20 +11,20 @@ export default class TextFollow {
   }
 
   init() {
-    if (this.firstName && this.lastName && this.title && this.btnProjects) {
-      this.element.addEventListener('mousemove', this.follow.bind(this));
-    }
+    // if (this.firstName && this.lastName && this.title && this.btnProjects) {
+    //   this.element.addEventListener('mousemove', this.follow.bind(this));
+    // }
   }
 
   follow(e) {
-    const nameMutiplierX = 40;
-    const nameMutiplierY = 80;
+    const nameMutiplierX = 10;
+    const nameMutiplierY = 60;
 
-    const titleMutiplierX = 80;
-    const titleMutiplierY = 100;
+    const titleMutiplierX = 50;
+    const titleMutiplierY = 80;
 
-    const btnProjectsMultiplierX = 125;
-    const btnProjectsMultiplierY = 150;
+    const btnProjectsMultiplierX = 100;
+    const btnProjectsMultiplierY = 125;
 
     const firstNameX = e.clientX / nameMutiplierX;
     const lastNameX = -e.clientX / nameMutiplierX;

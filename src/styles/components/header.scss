@@ -4,7 +4,7 @@
 
 .header {
     padding: 0 2rem;
-    height: 150px;
+    height: var(--header-height);
     width: 100%;
     z-index: 10;
     position: sticky;
@@ -155,7 +155,7 @@
     }
 
     .nav-primary__item {
-        font-size: var(--font-size-h1);
+        font-size: 8.4rem;
         color: var(--color-black);
         text-transform: uppercase;
         padding: 0 20px;
@@ -301,5 +301,118 @@
 .nav-is-active {
     body {
         overflow: hidden;
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .header {
+        .header__brand {
+            height: 55px;
+            width: 55px;
+
+            .text {
+                font-size: 4.8rem;
+                top: 57%;
+                left: 26%;
+            }
+        }
+
+        .header__toggle {
+            .icon-menu {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .header {
+        .nav-socials {
+            .nav-socials__item {
+                font-size: 2.2rem;
+                padding: 8px;
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .header {
+        .menu {
+            .wrapper {
+                flex-direction: column;
+                justify-content: center;
+                gap: 50px;
+            }
+        }
+
+        .nav-primary {
+            ul {
+                gap: 25px;
+            }
+
+            .nav-primary__item {
+                font-size: 4.8rem;
+                text-align: center;
+            }
+        }
+
+        .nav-socials {
+            ul {
+                gap: 10px;
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .header {
+        .nav-primary {
+            ul {
+                gap: 20px;
+            }
+
+            .nav-primary__item {
+                font-size: 3.6rem;
+            }
+        }
+
+        .nav-socials {
+            ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+/*
+   400px
+   ========================================================================== */
+
+@media screen and (max-width: 400px) {
+    .header {
+        .nav-socials {
+            ul {
+                gap: 5px;
+            }
+        }
     }
 }
