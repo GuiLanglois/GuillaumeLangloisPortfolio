@@ -6,7 +6,7 @@
     position: absolute;
     height: 100vh;
     width: 100%;
-    margin-top: -150px;
+    margin-top: var(--header-height-neg);
 
     .wrapper {
         position: relative;
@@ -39,7 +39,7 @@
 
             h2 {
                 font-family: var(--font-secondary);
-                font-size: 5rem;
+                font-size: var(--font-size-h2-pc-home);
                 text-align: right;
                 padding-right: 5%;
             }
@@ -48,7 +48,197 @@
         .btn-container {
             padding-top: 50px;
             text-align: right;
-            margin-right: 6%;
+            margin-right: 11%;
+        }
+    }
+}
+
+/*
+   Large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-lg) {
+    .home {
+        .home-content {
+            max-width: 80%;
+
+            .heading {
+                h1 {
+                    font-size: var(--font-size-h1-tablet-home);
+                }
+
+                h2 {
+                    font-size: var(--font-size-h2-tablet-home);
+                    padding-right: 3.5%;
+                }
+            }
+
+            .btn-container {
+                padding-top: 30px;
+            }
+        }
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .home {
+        .home-content {
+            .heading {
+                h1 {
+                    font-size: 12rem;
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    padding-right: 4%;
+                }
+            }
+
+            .btn-container {
+                margin-right: 6.5%;
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .home {
+        .home-content {
+            .heading {
+                h1 {
+                    font-size: 10rem;
+                }
+
+                h2 {
+                    font-size: 2.8rem;
+                    padding-right: 2%;
+                }
+            }
+
+            .btn-container {
+                padding-top: 20px;
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .home {
+        .home-content {
+            .heading {
+                h1 {
+                    font-size: 7rem;
+                }
+
+                h2 {
+                    font-size: 2.4rem;
+                    padding-right: 0px;
+                }
+            }
+
+            .btn-container {
+                padding-top: 15px;
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .home {
+        .home-content {
+            .heading {
+                h1 {
+                    font-size: 6rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .home {
+        .home-content {
+            .heading {
+                h1 {
+                    font-size: var(--font-size-h1-mobile-home);
+                }
+
+                h2 {
+                    font-size: var(--font-size-h2-mobile-home);
+                }
+            }
+
+            .btn-container {
+                padding-top: 10px;
+                margin-right: 3%;
+            }
+        }
+    }
+}
+
+/*
+   450px
+   ========================================================================== */
+
+@media screen and (max-width: 450px) {
+    .home {
+        .home-content {
+            max-width: 90%;
+        }
+    }
+}
+
+/*
+   375px
+   ========================================================================== */
+
+@media screen and (max-width: 375px) {
+    .home {
+        text-align: center;
+
+        .home-content {
+            .heading {
+                h1 {
+                    .last-name {
+                        text-align: center;
+                    }
+                }
+
+                h2 {
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+            }
+
+            .btn-container {
+                text-align: center;
+                padding-top: 15px;
+                margin-right: 0;
+            }
         }
     }
 }

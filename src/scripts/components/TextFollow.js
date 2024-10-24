@@ -11,9 +11,9 @@ export default class TextFollow {
   }
 
   init() {
-    // if (this.firstName && this.lastName && this.title && this.btnProjects) {
-    //   this.element.addEventListener('mousemove', this.follow.bind(this));
-    // }
+    if (this.firstName && this.lastName && this.title && this.btnProjects) {
+      this.element.addEventListener('mousemove', this.follow.bind(this));
+    }
   }
 
   follow(e) {

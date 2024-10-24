@@ -18,6 +18,7 @@ $breakpoint-xl: 1920px;
     --grid-gap: 30px;
 
     --header-height: 150px;
+    --header-height-neg: -150px;
 }
 
 /*
@@ -27,5 +28,6 @@ $breakpoint-xl: 1920px;
 @media screen and (max-width: $breakpoint-ml) {
     :root {
         --header-height: 110px;
+        --header-height-neg: -110px;
     }
 }

@@ -226,6 +226,7 @@
     z-index: 10;
 
     .icon-menu {
+        color: var(--color-black);
         font-size: var(--font-size-content-pc);
         animation: rotation 25s infinite linear;
     }
