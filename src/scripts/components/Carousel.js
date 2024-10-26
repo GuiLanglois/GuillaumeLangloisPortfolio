@@ -4,6 +4,10 @@ export default class Carousel {
   constructor(element) {
     this.element = element;
     this.options = {
+      grabCursor: true,
+      autoplay: false,
+      slidesOffsetAfter: 20,
+      slidesOffsetBefore: 20,
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
@@ -28,10 +32,41 @@ export default class Carousel {
   setOptions() {
     const variant = this.element.dataset.variant;
 
-    if (variant == 'split-3') {
+    if (variant == 'skills') {
+      this.options.breakpoints = {
+        350: {
+          slidesPerView: 1.1175,
+        },
+        400: {
+          slidesPerView: 1.1125,
+        },
+        550: {
+          slidesPerView: 1.075,
+        },
+        675: {
+          slidesPerView: 1.06,
+        },
+        768: {
+          slidesPerView: 2.085,
+        },
+        1366: {
+          slidesOffsetAfter: 30,
+          slidesOffsetBefore: 30,
+          slidesPerView: 3.15,
+        },
+        1630: {
+          slidesPerView: 4.1,
+        },
+        1850: {
+          slidesPerView: 5.1,
+        },
+      };
+    }
+
+    if (variant == 'qualities') {
       this.options.breakpoints = {
         1024: {
-          slidesPerView: 3.5,
+          slidesPerView: 3,
         },
       };
     }
@@ -51,7 +86,7 @@ export default class Carousel {
 
     if ('autoplay' in this.element.dataset) {
       this.options.autoplay = {
-        delay: 5000,
+        delay: 2000,
         disableOnInteraction: false,
         pauseOnMouseEnter: true,
       };

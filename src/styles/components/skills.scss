@@ -8,18 +8,10 @@
         padding-bottom: 50px;
     }
 
-    .swiper-wrapper:first-child {
-        padding-left: 30px;
-    }
-
     .card {
         border: 6px solid var(--color-black);
-        max-width: 400px;
-        height: 400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px;
+        height: 300px;
+        padding: 15px;
         transition: all 0.4s ease-in-out;
 
         .card-content {
@@ -30,6 +22,7 @@
             height: 100%;
 
             p {
+                font-size: 3rem;
                 margin: 0;
                 color: var(--color-white);
                 opacity: 0;
@@ -52,6 +45,59 @@
                 svg {
                     color: var(--color-white);
                     fill: var(--color-white);
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .skills {
+        h2 {
+            font-size: var(--font-size-h2-mobile-about) !important;
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .skills {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .skills {
+        h2 {
+            font-size: var(--font-size-h2-tablet-about);
+            padding-bottom: 40px;
+        }
+    }
+}
+
+/*
+   450px
+   ========================================================================== */
+
+@media screen and (max-width: 450px) {
+    .skills {
+        .card {
+            .card-content {
+                p {
+                    font-size: 2.6rem;
                 }
             }
         }

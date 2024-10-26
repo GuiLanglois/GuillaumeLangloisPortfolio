@@ -6,7 +6,12 @@
     padding-bottom: 150px;
 
     h2 {
+        font-size: var(--font-size-h2-pc-about);
         padding-bottom: 50px;
+    }
+
+    .swiper-wrapper:first-child {
+        padding-left: 30px;
     }
 
     .cards {
