@@ -7,7 +7,7 @@
     position: absolute;
     height: 100vh;
     width: 100%;
-    margin-top: -150px;
+    margin-top: var(--header-height-neg);
 
     .wrapper {
         position: relative;
@@ -38,6 +38,44 @@
 
             p {
                 margin: 0;
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .page-not-found {
+        .content {
+            gap: 30px;
+
+            .heading {
+                h1 {
+                    font-size: var(--font-size-h1-tablet-home);
+                    padding-top: 3%;
+                    margin-bottom: -5%;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .page-not-found {
+        .content {
+            .heading {
+                h1 {
+                    font-size: 10rem;
+                    padding-top: 3.5%;
+                    margin-bottom: -8%;
+                }
             }
         }
     }
