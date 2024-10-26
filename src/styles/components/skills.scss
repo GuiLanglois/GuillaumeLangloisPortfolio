@@ -52,13 +52,22 @@
 }
 
 /*
-   Xtra-small
+   Small
    ========================================================================== */
 
-@media screen and (max-width: $breakpoint-xs) {
+@media screen and (max-width: $breakpoint-sm) {
     .skills {
         h2 {
-            font-size: var(--font-size-h2-mobile-about) !important;
+            font-size: var(--font-size-h2-tablet-about);
+            padding-bottom: 40px;
+        }
+
+        .card {
+            .card-content {
+                svg {
+                    font-size: 3.6rem;
+                }
+            }
         }
     }
 }
@@ -74,16 +83,14 @@
         }
     }
 }
-
 /*
-   Small
+   Xtra-small
    ========================================================================== */
 
-@media screen and (max-width: $breakpoint-sm) {
+@media screen and (max-width: $breakpoint-xs) {
     .skills {
         h2 {
-            font-size: var(--font-size-h2-tablet-about);
-            padding-bottom: 40px;
+            font-size: var(--font-size-h2-mobile-about);
         }
     }
 }

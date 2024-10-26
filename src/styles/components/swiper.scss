@@ -34,3 +34,21 @@
         }
     }
 }
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            border: 2px solid var(--color-black);
+            padding: 20px 20px;
+
+            &::after {
+                font-size: 22px;
+            }
+        }
+    }
+}

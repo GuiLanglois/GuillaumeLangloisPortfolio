@@ -27,6 +27,11 @@
             position: relative;
             overflow: hidden;
 
+            .card-inside {
+                width: 100%;
+                height: 100%;
+            }
+
             .card-content {
                 opacity: 1;
                 z-index: 5;
@@ -49,6 +54,7 @@
                 }
 
                 h3 {
+                    font-size: 4.8rem;
                     color: var(--color-white);
                     position: absolute;
                     left: var(--card-padding);
@@ -57,25 +63,25 @@
                 }
 
                 .hobby-game {
-                    --title-height: 219px;
+                    --title-height: 237px;
 
                     bottom: calc(var(--card-padding) + var(--title-height));
                 }
 
                 .hobby-music {
-                    --title-height: 197px;
+                    --title-height: 213px;
 
                     bottom: calc(var(--card-padding) + var(--title-height));
                 }
 
                 .hobby-cinema {
-                    --title-height: 177px;
+                    --title-height: 191px;
 
                     bottom: calc(var(--card-padding) + var(--title-height));
                 }
 
                 .hobby-fashion {
-                    --title-height: 129px;
+                    --title-height: 140px;
 
                     bottom: calc(var(--card-padding) + var(--title-height));
                 }
@@ -104,6 +110,223 @@
                 .card-content {
                     opacity: 0;
                     z-index: -1;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-lg) {
+    .hobbies {
+        .cards {
+            .card {
+                .card-hover {
+                    p {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .hobbies {
+        .cards {
+            grid-template-columns: repeat(2, 1fr);
+
+            .card {
+                height: 400px;
+                width: 100%;
+
+                .card-content {
+                    .card-img {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 4.8rem;
+                    }
+                }
+
+                .card-hover {
+                    p {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   900px
+   ========================================================================== */
+
+@media screen and (max-width: 900px) {
+    .hobbies {
+        .cards {
+            gap: 15px;
+
+            .card {
+                .card-hover {
+                    p {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .hobbies {
+        h2 {
+            padding-bottom: 40px;
+        }
+
+        .cards {
+            grid-template-columns: repeat(1, 1fr);
+            gap: 20px;
+
+            .card {
+                width: 100%;
+
+                .card-inside {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 15px;
+                }
+
+                .card-content {
+                    opacity: 1;
+                    z-index: -1;
+
+                    .card-img {
+                        width: 100%;
+                        height: 100%;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    h3 {
+                        font-size: 3.6rem;
+                        position: static;
+                        transform: rotate(0deg);
+                        padding-bottom: 15px;
+
+                        &::before {
+                            content: '';
+                            background: var(--color-white);
+                            display: block;
+                            width: 100%;
+                            height: 3px;
+                            position: absolute;
+                            bottom: 0;
+                            left: 0;
+                            z-index: 10;
+                        }
+                    }
+                }
+
+                .card-hover {
+                    background: transparent;
+                    height: fit-content;
+                    width: fit-content;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        font-size: 2.8rem;
+                        color: var(--color-white);
+                        margin: 0;
+                        padding: 0 30px;
+                        text-align: center;
+                        opacity: 1;
+                    }
+                }
+
+                &:hover {
+                    .card-content {
+                        opacity: 1;
+                        z-index: -1;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .hobbies {
+        h2 {
+            text-align: center;
+        }
+    }
+}
+
+/*
+   550px
+   ========================================================================== */
+
+@media screen and (max-width: 550px) {
+    .hobbies {
+        .cards {
+            .card {
+                .card-hover {
+                    p {
+                        font-size: var(--font-size-mobile-content);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .hobbies {
+        h2 {
+            font-size: var(--font-size-h2-mobile-about);
+        }
+
+        .cards {
+            .card {
+                .card-content {
+                    h3 {
+                        font-size: var(--font-size-h2-mobile-about);
+                    }
                 }
             }
         }
