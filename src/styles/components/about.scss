@@ -30,13 +30,14 @@
 
         .about-img {
             position: relative;
+            overflow-x: clip;
 
             .img-border {
                 border: 6px solid var(--color-black);
+                width: 100%;
                 height: 100%;
                 position: absolute;
                 bottom: 0;
-                width: 100%;
             }
 
             img {
@@ -49,6 +50,265 @@
                 -webkit-filter: brightness(125%);
                 -moz-filter: brightness(125%);
                 filter: brightness(125%);
+            }
+        }
+    }
+}
+
+/*
+   1500px
+   ========================================================================== */
+
+@media screen and (max-width: 1500px) {
+    .about {
+        .about-content {
+            .about-text {
+                .about-paragraphs {
+                    p {
+                        font-size: 3.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .about {
+        .about-content {
+            .about-text {
+                h1 {
+                    font-size: var(--font-size-h1-tablet-about);
+                    padding: 35px 0 10px;
+                }
+
+                .about-paragraphs {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}
+
+/*
+   1270px
+   ========================================================================== */
+
+@media screen and (max-width: 1270px) {
+    .about {
+        .about-content {
+            .about-text {
+                .about-paragraphs {
+                    p {
+                        font-size: 2.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   1120px
+   ========================================================================== */
+
+@media screen and (max-width: 1120px) {
+    .about {
+        .about-content {
+            .about-text {
+                .about-paragraphs {
+                    p {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .about {
+        padding: 80px 0;
+
+        .about-content {
+            .about-text {
+                h1 {
+                    font-size: 12.5rem;
+                    padding: 30px 0 10px;
+                }
+
+                .about-paragraphs {
+                    gap: 20px;
+
+                    p {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   900px
+   ========================================================================== */
+
+@media screen and (max-width: 900px) {
+    .about {
+        .about-content {
+            .about-text {
+                h1 {
+                    font-size: 10rem;
+                    padding: 25px 0 10px;
+                }
+
+                .about-paragraphs {
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   800px
+   ========================================================================== */
+
+@media screen and (max-width: 800px) {
+    .about {
+        .about-content {
+            .about-text {
+                .about-paragraphs {
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .about {
+        padding: 40px 0;
+
+        .about-content {
+            grid-template-columns: 1fr;
+            gap: 0;
+
+            .about-text {
+                .about-paragraphs {
+                    gap: 20px;
+
+                    p {
+                        font-size: 2.2rem;
+                    }
+                }
+            }
+
+            .about-img {
+                min-height: 500px;
+
+                .img-border {
+                    width: 70%;
+                    height: 80%;
+                    bottom: 0;
+                    right: 0;
+                }
+
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*
+   660px
+   ========================================================================== */
+
+@media screen and (max-width: 660px) {
+    .about {
+        .about-content {
+            .about-text {
+                .about-paragraphs {
+                    gap: 15px;
+
+                    p {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+
+            .about-img {
+                .img-border {
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+
+/*
+   580px
+   ========================================================================== */
+
+@media screen and (max-width: 580px) {
+    .about {
+        .about-content {
+            .about-img {
+                .img-border {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .about {
+        .about-content {
+            .about-img {
+                min-height: 400px;
+
+                .img-border {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*
+  420px
+   ========================================================================== */
+
+@media screen and (max-width: 420px) {
+    .about {
+        .about-content {
+            .about-img {
+                .img-border {
+                    width: 100%;
+                }
             }
         }
     }

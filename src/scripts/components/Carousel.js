@@ -6,8 +6,6 @@ export default class Carousel {
     this.options = {
       grabCursor: true,
       autoplay: false,
-      slidesOffsetAfter: 20,
-      slidesOffsetBefore: 20,
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
@@ -35,29 +33,35 @@ export default class Carousel {
     if (variant == 'skills') {
       this.options.breakpoints = {
         350: {
-          slidesPerView: 1.1175,
+          centeredSlides: true,
+          slidesPerView: 1.08,
         },
         400: {
-          slidesPerView: 1.1125,
-        },
-        550: {
+          centeredSlides: true,
           slidesPerView: 1.075,
         },
+        550: {
+          centeredSlides: true,
+          slidesPerView: 1.07,
+        },
         675: {
-          slidesPerView: 1.06,
+          centeredSlides: true,
+          slidesPerView: 1.05,
         },
         768: {
-          slidesPerView: 2.085,
+          centeredSlides: false,
+          slidesPerView: 2.075,
         },
         1366: {
-          slidesOffsetAfter: 30,
-          slidesOffsetBefore: 30,
-          slidesPerView: 3.15,
+          centeredSlides: false,
+          slidesPerView: 3.1,
         },
         1630: {
+          centeredSlides: false,
           slidesPerView: 4.1,
         },
         1850: {
+          centeredSlides: false,
           slidesPerView: 5.1,
         },
       };
@@ -65,8 +69,21 @@ export default class Carousel {
 
     if (variant == 'qualities') {
       this.options.breakpoints = {
-        1024: {
-          slidesPerView: 3,
+        350: {
+          centeredSlides: true,
+          slidesPerView: 1.05,
+        },
+        768: {
+          slidesOffsetBefore: 20,
+          slidesOffsetAfter: 20,
+          centeredSlides: false,
+          slidesPerView: 2.1,
+        },
+        1366: {
+          slidesOffsetBefore: 30,
+          slidesOffsetAfter: 30,
+          centeredSlides: false,
+          slidesPerView: 3.1,
         },
       };
     }

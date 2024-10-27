@@ -52,11 +52,50 @@
 }
 
 /*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .skills {
+        .card {
+            .card-content {
+                p {
+                    color: var(--color-black);
+                    opacity: 1;
+                }
+
+                svg {
+                    color: var(--color-black);
+                    fill: var(--color-black);
+                }
+            }
+
+            &:hover {
+                background: var(--color-white);
+
+                .card-content {
+                    p {
+                        opacity: 1;
+                    }
+
+                    svg {
+                        color: var(--color-black);
+                        fill: var(--color-black);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
    Small
    ========================================================================== */
 
 @media screen and (max-width: $breakpoint-sm) {
     .skills {
+        padding-bottom: 40px 0;
+
         h2 {
             font-size: var(--font-size-h2-tablet-about);
             padding-bottom: 40px;
