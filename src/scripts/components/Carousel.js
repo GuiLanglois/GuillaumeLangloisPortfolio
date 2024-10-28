@@ -90,7 +90,12 @@ export default class Carousel {
 
     if (variant == 'split-2') {
       this.options.breakpoints = {
-        1024: {
+        900: {
+          centeredSlides: true,
+          slidesPerView: 1.5,
+        },
+        1366: {
+          centeredSlides: false,
           slidesPerView: 2,
         },
       };

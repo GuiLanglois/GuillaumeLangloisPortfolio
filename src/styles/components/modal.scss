@@ -86,3 +86,123 @@
         overflow: hidden;
     }
 }
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .modal {
+        --bar-height: 6px;
+        --bar-width: 48px;
+
+        figure {
+            figcaption {
+                font-size: 3rem;
+            }
+        }
+
+        button.btn-close {
+            right: -60px;
+        }
+    }
+}
+
+/*
+   1150px
+   ========================================================================== */
+
+@media screen and (max-width: 1150px) {
+    .modal {
+        figure {
+            figcaption {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .modal {
+        figure {
+            figcaption {
+                font-size: 2.4rem;
+            }
+        }
+    }
+}
+
+/*
+   900px
+   ========================================================================== */
+
+@media screen and (max-width: 900px) {
+    .modal {
+        figure {
+            figcaption {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .modal {
+        padding: 20px;
+
+        figure {
+            figcaption {
+                padding-top: 8px;
+                font-size: 1.55rem;
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .modal {
+        --bar-height: 4px;
+        --bar-width: 36px;
+
+        padding: 15px;
+
+        figure {
+            figcaption {
+                font-size: 1.8rem;
+            }
+        }
+
+        button.btn-close {
+            right: -50px;
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .modal {
+        padding: 10px;
+
+        figure {
+            figcaption {
+                padding-top: 5px;
+                font-size: 1.6rem;
+            }
+        }
+    }
+}

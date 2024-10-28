@@ -58,6 +58,7 @@
 
             p {
                 margin: var(--content-text-margin) 0 0;
+                font-size: 3.4rem;
             }
         }
     }
@@ -90,15 +91,330 @@
 
             p {
                 margin: var(--content-text-margin) 0;
+                font-size: 3.4rem;
             }
         }
 
         .carousel-img {
             .content-img {
-                height: 470px;
-
                 img {
                     height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-lg) {
+    .project-content {
+        figure {
+            figcaption {
+                font-size: 2rem;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            .content-text {
+                h2 {
+                    font-size: 3.9rem;
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 3.9rem;
+                }
+
+                p {
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .project-content {
+        --content-text-margin: 25px;
+
+        padding-bottom: 100px;
+
+        .wrapper {
+            gap: 60px;
+        }
+
+        figure {
+            figcaption {
+                font-size: 1.8rem;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            .content-text {
+                h2 {
+                    font-size: 3.4rem;
+                }
+
+                p {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 3.4rem;
+                }
+
+                p {
+                    font-size: 2.6rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   1150px
+   ========================================================================== */
+
+@media screen and (max-width: 1150px) {
+    .project-content {
+        --content-text-margin: 20px;
+
+        padding-bottom: 80px;
+
+        figure {
+            figcaption {
+                font-size: 1.6rem;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            .content-text {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 2.2rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .project-content {
+        figure {
+            figcaption {
+                font-size: 1.8rem;
+            }
+        }
+
+        .content-img {
+            img,
+            video {
+                max-height: 400px;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            grid-template-columns: 1fr;
+
+            figure {
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .content-right {
+            .content-media {
+                order: 2;
+            }
+
+            .content-text {
+                order: 1;
+                text-align: left;
+            }
+        }
+
+        .content-left {
+            .content-media {
+                order: 2;
+            }
+
+            .content-text {
+                order: 1;
+                text-align: left;
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .project-content {
+        --content-text-margin: 15px;
+
+        .wrapper {
+            gap: 50px;
+        }
+
+        figure {
+            figcaption {
+                font-size: 1.6rem;
+            }
+        }
+
+        .content-img {
+            img,
+            video {
+                max-height: 300px;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            gap: 20px;
+
+            figure {
+                width: 90%;
+            }
+
+            .content-text {
+                h2 {
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 2.8rem;
+                }
+
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .project-content {
+        .content-right,
+        .content-left {
+            figure {
+                width: 100%;
+            }
+
+            .content-text {
+                h2 {
+                    font-size: 2.4rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 2.4rem;
+                }
+
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .project-content {
+        figure {
+            figcaption {
+                font-size: 1.6rem;
+            }
+        }
+
+        .content-right,
+        .content-left {
+            .content-text {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .content-carousel {
+            .content-text {
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.6rem;
                 }
             }
         }
