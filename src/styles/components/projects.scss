@@ -26,12 +26,12 @@
             display: flex;
         }
 
-        .card-right {
-            justify-content: flex-end;
-        }
-
         .card-left {
             justify-content: flex-start;
+        }
+
+        .card-right {
+            justify-content: flex-end;
         }
 
         .card-project {
@@ -203,12 +203,308 @@
     }
 }
 
+/*
+   Medium-large
+   ========================================================================== */
 @media screen and (max-width: $breakpoint-ml) {
     .projects {
         .cards-projects {
             .card-left,
             .card-right {
                 justify-content: center;
+            }
+        }
+    }
+}
+
+/*
+   1200px
+   ========================================================================== */
+@media screen and (max-width: 1200px) {
+    .projects {
+        padding: 80px 0 100px;
+
+        h1 {
+            font-size: 6.4rem;
+            padding: 0 0 50px;
+        }
+
+        .cards-projects {
+            gap: 60px;
+
+            .card-project {
+                .card-project__content {
+                    h2 {
+                        font-size: 2.6rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   1100px
+   ========================================================================== */
+@media screen and (max-width: 1100px) {
+    .projects {
+        .cards-projects {
+            .card-project {
+                padding: 0;
+
+                img {
+                    -webkit-filter: grayscale(0%);
+                    -moz-filter: grayscale(0%);
+                    filter: grayscale(0%);
+                }
+
+                .card-project__content {
+                    background: rgba(32, 32, 32, 0.6);
+                    bottom: 0;
+                    padding: 20px 30px;
+                    gap: 15px;
+                    transform: translateY(0%);
+
+                    h2 {
+                        font-size: var(--font-size-h2-mobile-projects);
+                    }
+
+                    .card-project__info {
+                        gap: 20px;
+                        opacity: 1;
+
+                        .card__info-row {
+                            gap: 15px;
+
+                            p {
+                                font-size: 2.4rem;
+                                padding-right: 15px;
+                            }
+                        }
+
+                        .btn-sm {
+                            padding: 15px 20px;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .card-project__content {
+                        background: rgba(32, 32, 32, 0.6);
+
+                        .card-project__info {
+                            display: flex;
+                            opacity: 1;
+                        }
+                    }
+
+                    .card-content-left {
+                        left: 0;
+                        padding: 20px 30px;
+                    }
+
+                    .card-content-right {
+                        right: 0;
+                        padding: 20px 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+@media screen and (max-width: $breakpoint-md) {
+    .projects {
+        padding: 60px 0 100px;
+
+        h1 {
+            font-size: 4.8rem;
+            padding: 0 0 40px;
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+@media screen and (max-width: $breakpoint-sm) {
+    .projects {
+        .cards-projects {
+            gap: 50px;
+
+            .card-project {
+                padding: 10px;
+                height: fit-content;
+
+                .card-content__container {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .project-thumbnail {
+                    height: 100%;
+                }
+
+                img {
+                    max-height: 400px;
+                    display: block;
+                }
+
+                .card-project__content {
+                    background: var(--color-black);
+                    position: relative;
+
+                    h2 {
+                        font-size: 2.4rem;
+                    }
+
+                    .card-project__info {
+                        .card__info-row {
+                            p {
+                                font-size: 2rem;
+                            }
+
+                            svg {
+                                font-size: 2.8rem;
+                            }
+                        }
+                    }
+                }
+
+                .card-content-left,
+                .card-content-right {
+                    position: relative;
+                    text-align: center;
+                }
+
+                .flex-start,
+                .flex-end {
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                &:hover {
+                    padding: 10px;
+
+                    .card-project__content {
+                        background: var(--color-black);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+@media screen and (max-width: 600px) {
+    .projects {
+        .cards-projects {
+            .card-project {
+                img {
+                    height: 300px;
+                }
+
+                .card-project__content {
+                    h2 {
+                        font-size: 2rem;
+                    }
+
+                    .card-project__info {
+                        .card__info-row {
+                            .card__icon-list {
+                                gap: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+@media screen and (max-width: $breakpoint-xs) {
+    .projects {
+        .cards-projects {
+            .card-project {
+                .card-project__content {
+                    padding: 15px 20px;
+
+                    .card-project__info {
+                        .card__info-row {
+                            gap: 10px;
+
+                            p {
+                                font-size: var(--font-size-content-mobile);
+                                padding-right: 10px;
+                            }
+
+                            svg {
+                                font-size: 2.4rem;
+                            }
+
+                            .card__icon-list {
+                                gap: 8px;
+                            }
+                        }
+
+                        .btn-sm {
+                            font-size: var(--font-size-content-mobile);
+                        }
+                    }
+                }
+
+                &:hover {
+                    .card-content-left,
+                    .card-content-right {
+                        padding: 15px 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   400px
+   ========================================================================== */
+@media screen and (max-width: 400px) {
+    .projects {
+        .cards-projects {
+            .card-project {
+                .card-project__content {
+                    padding: 15px 15px;
+
+                    .card-project__info {
+                        .card__info-row {
+                            gap: 10px;
+
+                            p {
+                                font-size: var(--font-size-content-mobile);
+                                padding-right: 10px;
+                            }
+
+                            svg {
+                                font-size: 2.2rem;
+                            }
+                        }
+                    }
+                }
+
+                &:hover {
+                    .card-content-left,
+                    .card-content-right {
+                        padding: 15px 15px;
+                    }
+                }
             }
         }
     }
