@@ -433,6 +433,10 @@
    ========================================================================== */
 @media screen and (max-width: $breakpoint-xs) {
     .projects {
+        h1 {
+            text-align: center;
+        }
+
         .cards-projects {
             .card-project {
                 .card-project__content {
@@ -478,6 +482,10 @@
    ========================================================================== */
 @media screen and (max-width: 400px) {
     .projects {
+        h1 {
+            font-size: 4.2rem;
+        }
+
         .cards-projects {
             .card-project {
                 .card-project__content {

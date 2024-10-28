@@ -3,11 +3,12 @@
    ========================================================================== */
 
 .project-heading {
-    padding: 100px 0;
+    padding: 80px 0;
 
     .heading-content {
         display: grid;
         grid-template-columns: 5fr 7fr;
+        align-items: center;
         gap: 30px;
 
         .heading-text {
@@ -29,6 +30,12 @@
             .text-info {
                 display: flex;
                 gap: 10px;
+                font-weight: 500;
+            }
+
+            .text-credits {
+                display: flex;
+                flex-direction: column;
             }
 
             .text-skills {
@@ -76,6 +83,388 @@
             width: 100%;
             height: 100%;
             display: block;
+        }
+    }
+}
+
+/*
+   Large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-lg) {
+    .project-heading {
+        .heading-content {
+            gap: 20px;
+
+            .heading-text {
+                h1 {
+                    font-size: var(--font-size-h1-tablet-project);
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 3.2rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 3.2rem;
+                    }
+
+                    ul {
+                        gap: 15px;
+
+                        .logo-after {
+                            gap: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   1500px
+   ========================================================================== */
+
+@media screen and (max-width: 1500px) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                .text-info,
+                .text-credits {
+                    font-size: 2.9rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2.9rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium-large
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-ml) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 3.6rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2.4rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2.4rem;
+                    }
+                }
+
+                .text-cta {
+                    padding-top: 15px;
+                }
+
+                .btn-sm {
+                    padding: 15px 30px;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+/*
+   1150px
+   ========================================================================== */
+
+@media screen and (max-width: 1150px) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Medium
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-md) {
+    .project-heading {
+        .heading-content {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+/*
+   900px
+   ========================================================================== */
+
+@media screen and (max-width: 900px) {
+    .project-heading {
+        .heading-content {
+            grid-template-columns: 1fr;
+
+            .heading-text {
+                align-items: center;
+
+                h1 {
+                    font-size: 4rem;
+                    text-align: center;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2.4rem;
+                    text-align: center;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2.4rem;
+                        text-align: center;
+                    }
+
+                    ul {
+                        justify-content: center;
+                    }
+                }
+            }
+
+            .heading-reel {
+                img,
+                video {
+                    width: 100%;
+                    max-height: 450px;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-sm) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 3.2rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2.2rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2.2rem;
+                    }
+
+                    ul {
+                        .logo {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 2.4rem;
+                        }
+
+                        .logo-after {
+                            &::after {
+                                width: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   600px
+   ========================================================================== */
+
+@media screen and (max-width: 600px) {
+    .project-heading {
+        .heading-content {
+            .heading-reel {
+                img,
+                video {
+                    height: 300px;
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2rem;
+                    }
+
+                    ul {
+                        .logo {
+                            font-size: 2rem;
+                        }
+
+                        .logo-after {
+                            &::after {
+                                width: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+   Xtra-small
+   ========================================================================== */
+
+@media screen and (max-width: $breakpoint-xs) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 2.8rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: 2rem;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: 2rem;
+                    }
+
+                    ul {
+                        gap: 10px;
+
+                        .logo {
+                            font-size: 2rem;
+                        }
+
+                        .logo-after {
+                            gap: 10px;
+
+                            &::after {
+                                width: 2px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*
+  400px
+   ========================================================================== */
+
+@media screen and (max-width: 400px) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                h1 {
+                    font-size: 2.4rem;
+                }
+
+                .text-info,
+                .text-credits {
+                    font-size: var(--font-size-content-mobile);
+                }
+
+                .text-info {
+                    gap: 5px;
+                }
+
+                .text-skills {
+                    p {
+                        font-size: var(--font-size-content-mobile);
+                    }
+                }
+
+                .text-cta {
+                    padding-bottom: 20px;
+                }
+            }
+
+            .heading-reel {
+                height: 120%;
+
+                img,
+                video {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*
+  375px
+   ========================================================================== */
+
+@media screen and (max-width: 375px) {
+    .project-heading {
+        .heading-content {
+            .heading-text {
+                .text-info {
+                    gap: 2px;
+                }
+            }
         }
     }
 }
