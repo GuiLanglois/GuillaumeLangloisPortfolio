@@ -7,10 +7,6 @@ html {
     scroll-behavior: smooth;
     box-sizing: border-box;
 
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
     ::selection {
         color: var(--color-white);
         background: var(--color-black);
