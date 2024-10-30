@@ -70,6 +70,20 @@
                 padding-top: 20px;
                 display: flex;
                 justify-content: center;
+                gap: 20px;
+
+                .text-cta-btn {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 5px;
+
+                    p {
+                        color: rgba($color: #202020, $alpha: 0.5);
+                        font-size: 1.8rem;
+                    }
+                }
             }
         }
     }
@@ -119,6 +133,14 @@
                         }
                     }
                 }
+
+                .text-more-btns {
+                    .text-cta-btn {
+                        .more-btns-btn-sm {
+                            font-size: 2rem;
+                        }
+                    }
+                }
             }
         }
     }
@@ -140,6 +162,14 @@
                 .text-skills {
                     p {
                         font-size: 2.9rem;
+                    }
+                }
+
+                .text-more-btns {
+                    .text-cta-btn {
+                        .more-btns-btn-sm {
+                            padding: 20px 30px;
+                        }
                     }
                 }
             }
@@ -174,6 +204,15 @@
                     padding-top: 15px;
                 }
 
+                .text-more-btns {
+                    .text-cta-btn {
+                        .more-btns-btn-sm {
+                            padding: 15px 24px;
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+
                 .btn-sm {
                     padding: 15px 30px;
                     font-size: 2rem;
@@ -205,6 +244,17 @@
                         font-size: 2rem;
                     }
                 }
+
+                .text-more-btns {
+                    justify-content: flex-start;
+                    gap: 5px;
+
+                    .text-cta-btn {
+                        .more-btns-btn-sm {
+                            padding: 10px 15px;
+                        }
+                    }
+                }
             }
         }
     }
@@ -218,6 +268,19 @@
     .project-heading {
         .heading-content {
             grid-template-columns: 1fr 1fr;
+
+            .heading-text {
+                .text-more-btns {
+                    justify-content: center;
+                    gap: 20px;
+
+                    .text-cta-btn {
+                        .more-btns-btn-sm {
+                            padding: 15px 20px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
@@ -350,45 +413,6 @@
                     }
 
                     ul {
-                        .logo {
-                            font-size: 2rem;
-                        }
-
-                        .logo-after {
-                            &::after {
-                                width: 2px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-/*
-   Xtra-small
-   ========================================================================== */
-
-@media screen and (max-width: $breakpoint-xs) {
-    .project-heading {
-        .heading-content {
-            .heading-text {
-                h1 {
-                    font-size: 2.8rem;
-                }
-
-                .text-info,
-                .text-credits {
-                    font-size: 2rem;
-                }
-
-                .text-skills {
-                    p {
-                        font-size: 2rem;
-                    }
-
-                    ul {
                         gap: 10px;
 
                         .logo {
@@ -401,6 +425,22 @@
                             &::after {
                                 width: 2px;
                             }
+                        }
+                    }
+                }
+
+                .text-more-btns {
+                    justify-content: center;
+                    gap: 10px;
+
+                    .text-cta-btn {
+                        p {
+                            font-size: 1.6rem;
+                        }
+
+                        .more-btns-btn-sm {
+                            padding: 10px 15px;
+                            font-size: 1.6rem;
                         }
                     }
                 }
@@ -438,6 +478,23 @@
 
                 .text-cta {
                     padding-bottom: 20px;
+                }
+
+                .text-more-btns {
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 20px;
+
+                    .text-cta-btn {
+                        p {
+                            font-size: 1.6rem;
+                        }
+
+                        .more-btns-btn-sm {
+                            padding: 15px 30px;
+                            font-size: 1.8rem;
+                        }
+                    }
                 }
             }
 
